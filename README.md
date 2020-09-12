@@ -3,10 +3,10 @@
 ## Common Circle
 | Circle | Project | Language | Topics | Date of Completion | 
 |:---:|:---|:---:|:---|:---:|
-| 1 | [__Libft__]() | C | `library`, `Makefile`, `linked list` | 2019-12-16 |
-| 2 | [__get_next_line__]() | C | `static variable`, `file descriptor` | 2020-09-10 |
+| 1 | [__Libft__](https://github.com/Lusaka33/42_cursus/tree/master/1_libft) | C | `library`, `Makefile`, `linked list` | 2019-12-16 |
+| 2 | [__get_next_line__](https://github.com/Lusaka33/42_cursus/tree/master/2_get_next_line) | C | `static variable`, `file descriptor` | 2020-09-10 |
 |   | netwhat | - | `network`, `OSI protocols`, `TCP/IP` | open |
-|   | [__ft_printf__]() | C | `variadic arguments`, `UTF-8`, `bitwise operation` | open |
+|   | [__ft_printf__](https://github.com/Lusaka33/42_cursus/tree/master/3_ft_printf) | C | `variadic arguments`, `UTF-8`, `bitwise operation` | open |
 | 3 | ft_server |  |  | closed |
 |   | cub3d |  |  | closed |
 | 4 | libasm |  |  | closed |
