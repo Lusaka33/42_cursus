@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bubblesort.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:53:49 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 11:13:31 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_bubblesort(int *a, int b)
 		j = 0;
 		while (j < ((b - i) - 1))
 		{
-			if (a[j] > a[j + 1])
+			if (*(a + j) > *(a + j + 1))
 				ft_swap(&a[j], &a[j + 1]);
 			j++;
 		}

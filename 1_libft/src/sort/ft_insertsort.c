@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_insertsort.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:20:17 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 11:13:43 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ void	ft_insertsort(int *a, int b)
 	{
 		k = a[i];
 		j = i - 1;
-		while (j >= 0 && a[j] > k)
+		while (j >= 0 && *(a + j) > k)
 		{
-			a[j + 1] = a[j];
+			*(a + j + 1) = *(a + j);
 			j = j - 1;
 		}
-		a[j + 1] = k;
+		*(a + j + 1) = k;
 		i++;
 	}
 }

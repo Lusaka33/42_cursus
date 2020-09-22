@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_sort.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/25 15:41:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:09:03 by adrossig         ###   ########.fr       */
+/*   Created: 2020/09/15 11:08:57 by adrossig          #+#    #+#             */
+/*   Updated: 2020/09/15 11:09:40 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_SORT_H
+# define FT_SORT_H
 
-int		ft_strnequ(const char *s1, const char *s2, size_t n)
-{
-	size_t i;
+# include "libft.h"
 
-	i = 0;
-	if (!s1 || !s2)
-		return (KO);
-	while ((*(s1 + i) || *(s2 + i)) && n-- > 0)
-	{
-		if (*(s1 + i) != *(s2 + i))
-			return (OK);
-		i++;
-	}
-	return (1);
-}
+void			ft_insertsort(int *a, int b);
+void			ft_selectsort(int *a, int b);
+void			ft_bubblesort(int *a, int b);
+
+#endif

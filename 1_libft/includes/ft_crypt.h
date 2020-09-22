@@ -1,29 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_crypt.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/25 15:41:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:09:03 by adrossig         ###   ########.fr       */
+/*   Created: 2020/09/15 11:14:14 by adrossig          #+#    #+#             */
+/*   Updated: 2020/09/15 11:14:49 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_CRYPT_H
+# define FT_CRYPT_H
 
-int		ft_strnequ(const char *s1, const char *s2, size_t n)
-{
-	size_t i;
+void			ft_crypt_str(int decalage, char *tab);
+void			ft_uncrypt_str(int decalage, char *tab);
 
-	i = 0;
-	if (!s1 || !s2)
-		return (KO);
-	while ((*(s1 + i) || *(s2 + i)) && n-- > 0)
-	{
-		if (*(s1 + i) != *(s2 + i))
-			return (OK);
-		i++;
-	}
-	return (1);
-}
+#endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:35:56 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 11:13:12 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ char	*ft_strcat(char *dest, const char *src)
 
 	i = 0;
 	j = ft_strlen(dest);
-	while (src[i])
+	while (*(src + i))
 	{
-		dest[j + i] = src[i];
+		*(dest + i + j) = *(src + i);
 		i++;
 	}
-	dest[i + j] = '\0';
+	*(dest + i + j) = '\0';
 	return (dest);
 }

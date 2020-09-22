@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:25:38 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 10:50:42 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ static char	*ft_itoa_bis(int count, int sign, int div, long nb)
 	if (!(s = malloc(sizeof(char) * (count + 1 + sign + 1))))
 		return (NULL);
 	if (sign == 1)
-		s[i++] = '-';
+		*(s + i++) = '-';
 	while (div > 0)
 	{
 		res = (nb / div) % 10;
-		s[i++] = res + 48;
+		*(s + i++) = res + 48;
 		div = div / 10;
 	}
-	s[i] = '\0';
+	*(s + i) = '\0';
 	return (s);
 }
 

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:40:06 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/18 11:30:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 11:06:39 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	size = ft_strlen(s);
 	str = ft_strnew(size);
 	while (size--)
-		str[size] = f(size, s[size]);
+		*(str + size) = f(size, *(s + size));
 	return (str);
 }

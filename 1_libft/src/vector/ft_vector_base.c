@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 10:54:31 by adrossig          #+#    #+#             */
-/*   Updated: 2020/07/23 11:34:40 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 11:12:10 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,11 @@ int		ft_vector_extend(t_vector *vector)
 	i = 0;
 	while (i < vector->len)
 	{
-		anew[i] = vector->a[i];
+		*(anew + i) = vector->a[i];
 		i++;
 	}
 	while (i <= vector->max)
-		anew[i++] = NULL;
+		*(anew + i++) = NULL;
 	ft_memdel((void**)&(vector->a));
 	vector->a = anew;
 	return (OK);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_selectsort.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:35:10 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 10:57:33 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_selectsort(int *a, int b)
 		k = i;
 		while (j < b)
 		{
-			if (a[j] < a[k])
+			if (*(a + j) < *(a + k))
 				k = j;
 			ft_swap(&a[k], &a[i]);
 			j++;

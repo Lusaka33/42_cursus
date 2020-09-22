@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 10:49:47 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/10 18:01:29 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 14:58:07 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ static	char	*ft_substr(char *s, int start, int len)
 	i = 0;
 	while (i < len)
 	{
-		sub[i] = s[start + i];
+		*(sub + i) = *(s + start + i);
 		i++;
 	}
 	return (sub);
@@ -81,12 +81,12 @@ static char		*ft_strjoin(char *s1, char *s2)
 	j = 0;
 	while (s1[i] != '\0')
 	{
-		new[i] = s1[i];
+		*(new + i) = *(s1 + i);
 		i++;
 	}
-	while (s2[j] != '\0')
+	while (*(s2 + j) != '\0')
 	{
-		new[i + j] = s2[j];
+		*(new + i + j) = *(s2 + j);
 		j++;
 	}
 	new[len] = '\0';
@@ -125,16 +125,16 @@ int				get_next_line(int fd, char **line)
 	if (!(kpr[fd]) && (!(kpr[fd] = ft_calloc(sizeof(char), (BUFFER_SIZE + 1)))))
 		return (-1);
 	buff = (char*)ft_calloc(BUFFER_SIZE + 1, sizeof(char));
-	line_exist = is_there_line(kpr[fd]);
+	line_exist = is_there_line(*(kpr + fd));
 	while ((line_exist == 0) && (fdb = read(fd, buff, BUFFER_SIZE)) > 0)
 	{
-		buff[fdb] = '\0';
-		temp = ft_strjoin(kpr[fd], buff);
+		*(buff + fdb) = '\0';
+		temp = ft_strjoin(*(kpr + fd), buff);
 		free_and_return_null(&kpr[fd]);
-		kpr[fd] = temp;
-		line_exist = is_there_line(kpr[fd]);
+		*(kpr + fd) = temp;
+		line_exist = is_there_line(*(kpr + fd));
 	}
 	free_and_return_null(&buff);
-	fdb = find_char_index(kpr[fd], '\n', '\0');
+	fdb = find_char_index(*(kpr + fd), '\n', '\0');
 	return (final_step(fdb, &line, &kpr[fd]));
 }

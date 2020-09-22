@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_print.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/25 15:41:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:09:03 by adrossig         ###   ########.fr       */
+/*   Created: 2020/09/15 11:04:32 by adrossig          #+#    #+#             */
+/*   Updated: 2020/09/15 11:05:44 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_PRINT_H
+# define FT_PRINT_H
 
-int		ft_strnequ(const char *s1, const char *s2, size_t n)
-{
-	size_t i;
+# include "libft.h"
 
-	i = 0;
-	if (!s1 || !s2)
-		return (KO);
-	while ((*(s1 + i) || *(s2 + i)) && n-- > 0)
-	{
-		if (*(s1 + i) != *(s2 + i))
-			return (OK);
-		i++;
-	}
-	return (1);
-}
+void			ft_putnbr(int nb);
+void			ft_putchar(char c);
+void			ft_putendl(const char *s);
+void			ft_putstr(const char *str);
+void			ft_putnbr_fd(int n, int fd);
+void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(const char *s, int fd);
+void			ft_putendl_fd(const char *s, int fd);
+
+#endif

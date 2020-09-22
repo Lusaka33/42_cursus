@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:40:47 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 11:07:57 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ char	*ft_strncpy(char *dest, const char *src, size_t i)
 	unsigned j;
 
 	j = 0;
-	while ((src[j] != '\0') && j < i)
+	while ((*(src + j) != '\0') && j < i)
 	{
-		dest[j] = src[j];
+		*(dest + j) = *(src + j);
 		j++;
 	}
 	while (j < i)
 	{
-		dest[j] = '\0';
+		*(dest + j) = '\0';
 		j++;
 	}
 	return (dest);

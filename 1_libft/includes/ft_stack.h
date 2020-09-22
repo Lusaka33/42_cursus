@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_stack.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/25 15:41:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:09:03 by adrossig         ###   ########.fr       */
+/*   Created: 2020/09/15 10:22:08 by adrossig          #+#    #+#             */
+/*   Updated: 2020/09/15 11:16:58 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_STACK_H
+# define FT_STACK_H
 
-int		ft_strnequ(const char *s1, const char *s2, size_t n)
+typedef struct		s_stack
 {
-	size_t i;
+	void				**aray;
+	unsigned int		max;
+	int					counter;
+	int					offset;
+}					t_stack;
 
-	i = 0;
-	if (!s1 || !s2)
-		return (KO);
-	while ((*(s1 + i) || *(s2 + i)) && n-- > 0)
-	{
-		if (*(s1 + i) != *(s2 + i))
-			return (OK);
-		i++;
-	}
-	return (1);
-}
+#endif

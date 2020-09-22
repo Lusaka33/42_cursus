@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/13 10:50:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/18 11:30:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 10:59:15 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ static char	*f_strndup(const char *s1, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		cp[i] = s1[i];
+		*(cp + i) = *(s1 + i);
 		i++;
 	}
-	cp[i] = '\0';
+	*(cp + i) = '\0';
 	return (cp);
 }
 
@@ -63,13 +63,13 @@ char		**ft_split(const char *s, char c)
 		else
 		{
 			i = 0;
-			while (s[i] && s[i] != c)
+			while (*(s + i) && *(s + i) != c)
 				i++;
-			if (!(d[j++] = f_strndup(s, i)))
+			if (!(*(d + j++) = f_strndup(s, i)))
 				return (ft_strfree(d));
 			s += i;
 		}
 	}
-	d[j] = NULL;
+	*(d + j) = NULL;
 	return (d);
 }

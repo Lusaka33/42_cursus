@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:41:03 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/19 17:25:24 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 11:08:35 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ char	*ft_strndup(const char *s, size_t n)
 	i = 0;
 	if (!(s2 = (char*)malloc(sizeof(char) * (n + 1))))
 		return (NULL);
-	while (s[i] && i < n)
+	while (*(s + i) && i < n)
 	{
-		s2[i] = s[i];
+		*(s2 + i) = *(s + i);
 		i++;
 	}
-	s2[i] = '\0';
+	*(s2 + i) = '\0';
 	return (s2);
 }

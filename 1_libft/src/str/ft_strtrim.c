@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:47:33 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/18 11:30:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 11:11:00 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ char	*ft_strtrim(const char *s1, const char *set)
 		return (ft_strdup(s1));
 	i = 0;
 	j = ft_strlen(s1) - 1;
-	while (s1[i] && ft_strchr(set, s1[i]))
+	while (*(s1 + i) && ft_strchr(set, *(s1 + i)))
 		i++;
-	if (!s1[i])
+	if (!*(s1 + i))
 		return (ft_strdup(""));
-	while (s1[j] && ft_strchr(set, s1[j]))
+	while (*(s1 +j) && ft_strchr(set, *(s1 +j)))
 		j--;
 	return (ft_substr(s1, i, j - i + 1));
 }

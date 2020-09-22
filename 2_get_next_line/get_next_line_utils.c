@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 10:48:38 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/10 18:02:53 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/13 14:53:45 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int		ft_strlen(char *s)
 	i = 0;
 	if (!s)
 		return (0);
-	while (s[i] != '\0')
+	while (*(s + i) != '\0')
 		i++;
 	return (i);
 }
@@ -53,9 +53,9 @@ int		is_there_line(char *s)
 	int i;
 
 	i = 0;
-	while (s[i])
+	while (*(s + i))
 	{
-		if (s[i] == '\n')
+		if (*(s + i) == '\n')
 			return (1);
 		i++;
 	}
@@ -72,9 +72,9 @@ int		find_char_index(char *s, char c, char d)
 	int i;
 
 	i = 0;
-	while (s[i])
+	while (*(s + i))
 	{
-		if (s[i] == c || s[i] == d)
+		if (*(s + i) == c || *(s + i) == d)
 			return (i);
 		i++;
 	}
