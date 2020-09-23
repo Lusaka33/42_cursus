@@ -1,34 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_init_dict.c                                     :+:      :+:    :+:   */
+/*   ft_uitoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/10 12:41:15 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 15:08:21 by adrossig         ###   ########.fr       */
+/*   Created: 2020/09/23 16:13:53 by adrossig          #+#    #+#             */
+/*   Updated: 2020/09/23 16:27:34 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_dict.h"
 
-t_dictionary	*create_dict(void)
+static size_t	ft_uitoalen(unsigned int nbr)
 {
-	t_dictionary	*locma;
-	int				i;
+	int i;
 
-	if (!(locma = malloc(sizeof(t_dictionary))))
+	i = 1;
+	while (nbr /= 10)
+		i++;
+	return (nbr);
+}
+
+char			*ft_uitoa(unsigned int nbr)
+{
+	unsigned long	temp;
+	char			*str;
+	size_t			len;
+
+	temp = (unsigned long)nbr;
+	str = NULL;
+	len = ft_uitoalen(temp);
+	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	else
 	{
-		locma->nbr = 0;
-		i = 0;
-		while (i < MAXELEMENTS)
+		*(str + len) = '\0';
+		while (len > 0)
 		{
-			locma->elements[i] = NULL;
-			i++;
+			*(str + (len - 1)) = (temp % 10) + '0';
+			len--;
+			temp = temp / 10;
 		}
-		return (locma);
 	}
+	return (str);
 }

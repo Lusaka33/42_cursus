@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_get_string.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 13:53:55 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 13:53:57 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/23 16:08:06 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** Imprime les parties de la chaîne de caractères principale de ft_printf()
 ** qui ne nécessitent pas de conversion.
 ** =========
-** #1 : la chaîne de caractères, premier argument de ft_printf(). 
+** #1 : la chaîne de caractères, premier argument de ft_printf().
 ** #2 : un pointeur sur la position actuelle dans str.
 ** =========
 ** Retourne le nombre de caractère imprimés.
@@ -24,9 +24,10 @@
 
 int		ft_get_string(const char *str, size_t *ptr_pos)
 {
-	size_t	j;
-	size_t	k;
-	char	*line;
+	size_t		j;
+	size_t		k;
+	char		*line;
+	t_format	format;
 
 	j = *ptr_pos;
 	k = 0;
@@ -42,7 +43,7 @@ int		ft_get_string(const char *str, size_t *ptr_pos)
 	while (str[j] != '%')
 		line[k++] = str[j++];
 	ptr_pos += 1;
-	write(1, line, k);
+	write(format.fd, line, k);
 	free(line);
 	return (k);
 }

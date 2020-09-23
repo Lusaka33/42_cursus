@@ -71,7 +71,7 @@ STR :=	ft_strcat.c ft_strchr.c ft_strclr.c ft_strcmp.c ft_strcpy.c \
 		ft_strjoin.c ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c \
 		ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strndup.c ft_strnequ.c \
 		ft_strnew.c ft_strnstr.c ft_strrchr.c ft_split.c ft_substr.c \
-		ft_strtrim.c ft_strlcpy.c ft_strstr.c ft_strfree.c ft_strnlen.c \
+		ft_strtrim.c ft_strlcpy.c ft_strfree.c ft_strnlen.c \
 		ft_strrev.c ft_tolower_str.c ft_toupper_str.c
 
 VECTOR := ft_vector_base.c ft_vector_insert.c ft_vector_delete.c

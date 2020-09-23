@@ -1,21 +1,33 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/09/23 14:48:02 by adrossig          #+#    #+#              #
+#    Updated: 2020/09/23 15:30:02 by adrossig         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libftprintf.a
 
 ##################################### PATH #####################################
 
-PTF = ft-printf_sources/
-LIBFT = libft/libft_sources/
+PTF = src/
+LIBFT = libs/libft/src/
 
 #################################### SOURCES ###################################
 
-SRCS =	$(PTF)ft_calloc_flag.c			$(PTF)ft_char_add_width.c \
-		$(PTF)ft_check_format.c			$(PTF)ft_extract_buffer_part.c \
-		$(PTF)ft_format_arg.c			$(PTF)ft_get_format.c \
-		$(PTF)ft_get_string.c			$(PTF)ft_hexitoa.c \
-		$(PTF)ft_int_add_precision.c	$(PTF)ft_int_add_width.c \
-		$(PTF)ft_join.c					$(PTF)ft_print_adress.c \
-		$(PTF)ft_print_arguments.c		$(PTF)ft_print_char.c \
-		$(PTF)ft_print_nbr.c			$(PTF)ft_print_str.c \
-		$(PTF)ft_printf.c				$(PTF)ft_put_formatted_nbr.c \
+SRCS =	$(PTF)format/ft_calloc_flag.c		$(PTF)character/ft_char_add_width.c \
+		$(PTF)format/ft_check_format.c		$(PTF)string/ft_extract_buffer_part.c \
+		$(PTF)format/ft_format_arg.c		$(PTF)format/ft_get_format.c \
+		$(PTF)string/ft_get_string.c		$(PTF)number/ft_hexitoa.c \
+		$(PTF)number/ft_int_add_precision.c	$(PTF)number/ft_int_add_width.c \
+		$(PTF)base/ft_join.c				$(PTF)number/ft_print_adress.c \
+		$(PTF)base/ft_print_arguments.c		$(PTF)character/ft_print_char.c \
+		$(PTF)number/ft_print_nbr.c			$(PTF)string/ft_print_str.c \
+		$(PTF)ft_printf.c					$(PTF)number/ft_put_formatted_nbr.c \
 
 ##################################### BASIC ####################################
 
@@ -23,23 +35,25 @@ CFLAGS = -Wall -Wextra -Werror
 
 CC = gcc
 
-INC = ft-printf_header/
+INC = includes/
 
-HEADER = $(INC)libftprintf.h
+HEADER = $(INC)ft_printf.h
 
 OBJS = $(SRCS:.c=.o)
 
-OBJLIB =	$(LIBFT)get-next-line/*.o	$(LIBFT)libft_char/*.o \
-			$(LIBFT)libft_convert/*.o	$(LIBFT)libft_list/*.o \
-			$(LIBFT)libft_memory/*.o	$(LIBFT)libft_nbr/*.o \
-			$(LIBFT)libft_output/*.o	$(LIBFT)libft_string/*.o \
-
+OBJLIB =	$(LIBFT)array/*.o	$(LIBFT)crypt/*.o \
+			$(LIBFT)conv/*.o	$(LIBFT)dict/*.o \
+			$(LIBFT)mem/*.o		$(LIBFT)file/*.o \
+			$(LIBFT)char/*.o	$(LIBFT)lst/*.o \
+			$(LIBFT)malloc/*.o	$(LIBFT)math/*.o \
+			$(LIBFT)print/*.o	$(LIBFT)sort/*.o \
+			$(LIBFT)str/*.o		$(LIBFT)vector/*.o \
 ##################################### RULES ####################################
 
 all: complib $(NAME)
 
 complib:
-		$(MAKE) -C libft all
+		$(MAKE) -C libs/libft all
 
 $(OBJS): %.o: %.c $(HEADER)
 		$(CC) $(CFLAGS) -I$(INC) -c $< -o $@
@@ -49,11 +63,11 @@ $(NAME): $(OBJS)
 	ranlib $(NAME)
 
 clean:
-	$(MAKE) -C libft clean
+	$(MAKE) -C libs/libft clean
 	rm -f $(PTF)*.o
 
 fclean: clean
-	$(MAKE) -C libft fclean
+	$(MAKE) -C libs/libft fclean
 	rm -f $(NAME)
 
 re: fclean all

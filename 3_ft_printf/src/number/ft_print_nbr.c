@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_nbr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 13:54:12 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 13:54:13 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/23 15:46:20 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,16 +126,16 @@ int		ft_print_hex(t_format format, va_list ap)
 	return (ft_put_formatted_nbr(format, number));
 }
 
-/* 
+/*
 ** Alloue (avec malloc(3)) et gère les cas particuliers
 ** en cas de valeur nulle des nombres à formater et
-** selon le format donné. 
+** selon le format donné.
 ** =========
 ** #1 : le particulier à traiter.
 ** #2 : la (taille -1) à allouer pour la chaîne correspondante.
 ** =========
-** Retourne la chaîne de caractères représentant 
-** le nombre à formatter, NULL si l'allocation échoue. 
+** Retourne la chaîne de caractères représentant
+** le nombre à formatter, NULL si l'allocation échoue.
 */
 
 char	*ft_zeroes_cp(int cp, int size)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_str.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 13:53:50 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 13:53:52 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/23 16:08:06 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int		ft_print_str(t_format format, va_list ap)
 	printed = ft_printed(format.flag, new_buffer, to_add);
 	free(to_add);
 	free(new_buffer);
-	ft_putstr(printed);
+	ft_putstr_fd(printed, format.fd);
 	free(printed);
 	return (nbr_space + format.precision);
 }
@@ -94,7 +94,7 @@ char	*ft_to_add(int flag, int nbr_space)
 
 /*
 ** Crée la chapine finale formattée
-** en fonction du champ flag du format. 
+** en fonction du champ flag du format.
 ** =========
 ** #1 : le champ flag du format.
 ** #2 : la chaîne de caractères extraite de l'originale.

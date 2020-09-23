@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 13:55:40 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 13:56:13 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/23 15:29:19 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 # include <stdio.h>
 # include <stddef.h>
 # include <stdarg.h>
-# include "libft.h"
+# include "../libs/libft/includes/libft.h"
 
 /*
 **	Define text colors.
@@ -82,6 +82,7 @@
 
 typedef struct	s_format
 {
+	int		fd;
 	int		flag;
 	int		width;
 	int		precision;
@@ -99,16 +100,17 @@ typedef struct	s_position
 **PROTOTYPE
 */
 
-int				ft_printf(const char	*s, ...);
-void			ft_arg(const char	*s, t_position *p_pos, va_list ap, int *pf);
+int				ft_printf(const char *str, ...);
+int				ft_dprintf(int fd, const char *str, ...);
+void			ft_arg(const char *str, t_position *p_pos, va_list ap, int *pf);
 
 /*
 **Basic
 */
 
-char			*ft_join(char	*s1, char	*s2);
-char			*ft_str_null(char	*s1, char	*s2);
-int				ft_get_string(const char *str, size_t	*p_pos);
+char			*ft_join(char *s1, char	*s2);
+char			*ft_str_null(char *s1, char	*s2);
+int				ft_get_string(const char *str, size_t *p_pos);
 int				ft_print_arguments(t_format form, va_list ap);
 
 /*
@@ -119,7 +121,7 @@ t_format		ft_f(const char	*s, size_t	*p_pos, t_format form);
 t_format		ft_w(const char	*s, size_t	*p_pos, va_list ap, t_format form);
 t_format		ft_p(const char	*s, size_t	*p_pos, va_list ap, t_format form);
 char			ft_s(const char	*s, size_t	*p_pos);
-t_format		ft_get_format(const char	*s, size_t	*p_pos, va_list ap);
+t_format		ft_get_format(const char *str, size_t	*p_pos, va_list ap);
 int				ft_check_format(t_format form);
 char			*ft_calloc_flag(size_t count, int c);
 
@@ -139,8 +141,8 @@ char			*ft_printed(int flag, char	*new_buffer, char	*to_add);
 
 int				ft_print_c(t_format form, va_list ap);
 int				ft_print_per(t_format form);
-char			*ft_add_front_to_char(char c, char	*s);
-char			*ft_add_back_to_char(char c, char	*s);
+char			*ft_add_front_to_char(char c, char *s);
+char			*ft_add_back_to_char(char c, char *s);
 int				ft_put_formatted_char(t_format form, char c);
 void			ft_char_cp(char c, int	*p_with_form);
 
@@ -152,13 +154,13 @@ char			*ft_hexitoa(unsigned int n, char c);
 char			*ft_long_hexitoa(unsigned long n, char c);
 char			*ft_int_add_precision(char	*nbr, int precision);
 char			*ft_int_add_width(t_format form, char *nbr);
-int				ft_put_formatted_nbr(t_format form, char	*number);
+int				ft_put_formatted_nbr(t_format form, char *number);
 int				ft_print_signed_dec(t_format form, va_list ap);
 int				ft_print_unsigned_dec(t_format form, va_list ap);
 int				ft_print_hex(t_format form, va_list ap);
-int				ft_print_adr(t_format	form, va_list ap);
+int				ft_print_adr(t_format form, va_list ap);
 char			*ft_zeroes_cp(int cp, int size);
-char			*ft_int_cp(int precision, int width, int len, char	*nbr);
+char			*ft_int_cp(int precision, int width, int len, char *nbr);
 int				ft_print_adr_cp(void *adr, t_format format);
 
 #endif

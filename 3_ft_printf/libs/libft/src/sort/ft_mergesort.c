@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_mergesort.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 11:36:19 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/15 13:20:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/23 15:49:18 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static void	ft_merge(int *array, int left, int right, int nbr)
 	int i;
 	int p1;
 	int p2;
-	
+
 	i = 1;
 	p1 = 1;
 	p2 = ((left + right) / 2) + 1;
@@ -36,7 +36,6 @@ static void	ft_merge(int *array, int left, int right, int nbr)
 			*(locma + i++) = *(array + p2);
 			p2++;
 		}
-		
 	}
 	if (p2 == right + 1)
 	{
@@ -46,6 +45,4 @@ static void	ft_merge(int *array, int left, int right, int nbr)
 			p1++;
 		}
 	}
-; 
-	
 }

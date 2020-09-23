@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_put_formatted_nbr.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 13:54:05 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 13:54:06 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/23 16:08:06 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int		ft_put_formatted_nbr(t_format format, char *number)
 	with_width = ft_int_add_width(format, precised);
 	free(precised);
 	len = ft_strlen(with_width);
-	ft_putstr(with_width);
+	ft_putstr_fd(with_width, format.fd);
 	free(with_width);
 	return (len);
 }
