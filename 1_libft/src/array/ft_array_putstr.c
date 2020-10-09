@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 17:42:36 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/16 11:30:06 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/29 14:26:08 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int		ft_array_putstr(t_array *array)
 	while (i < array->size)
 	{
 		i++;
-		ft_printf("%d ", array->array[i]);
 	}
 	ft_putchar('\n');
 	return (OK);

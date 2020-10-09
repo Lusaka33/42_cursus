@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_get_format.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:54:40 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 15:45:35 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/09 09:30:49 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 10:17:06 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Récupère l'indication de formatage flag.

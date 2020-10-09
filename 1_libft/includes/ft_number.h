@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_gcd.c                                           :+:      :+:    :+:   */
+/*   ft_number.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/18 17:34:16 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/29 14:20:58 by adrossig         ###   ########.fr       */
+/*   Created: 2020/09/29 12:44:21 by adrossig          #+#    #+#             */
+/*   Updated: 2020/09/29 12:48:01 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_NUMBER_H
+# define FT_NUMBER_H
 
-int		ft_gcd(int nbr1, int nbr2)
-{
-	nbr1 = (nbr1 > 0) ? nbr1 : -nbr1;
-	nbr2 = (nbr2 > 0) ? nbr2 : -nbr2;
-	while (nbr1 != nbr2)
-	{
-		if (nbr1 > nbr2)
-			nbr1 -= nbr2;
-		else
-			nbr2 -= nbr1;
-	}
-	return (OK);
-}
+# include "libft.h"
+
+size_t	ft_intlen(int n);
+size_t	ft_uintlen(unsigned int n);
+size_t	ft_hexintlen(unsigned int n);
+size_t	ft_long_hexintlen(unsigned long int n);
+
+#endif

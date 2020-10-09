@@ -12,8 +12,8 @@
 
 NAME = libft.a
 
-CC = gcc
-FLAGS = -W -Wall -Werror -Wextra -g
+CC = clang
+FLAGS = -W -Wall -Werror -Wextra -g3 -O3 -emit-llvm
 INC = ./includes/
 
 T_BLK = \033[5m
@@ -26,7 +26,7 @@ C_LGRN = \033[92m
 C_LMGN = \033[95m
 C_END = \033[0m
 
-ARRAY :=	ft_array_erase.c ft_array_lenght.c ft_array_putstr.c \
+ARRAY := ft_array_erase.c ft_array_lenght.c ft_array_putstr.c \
 		ft_array_reverse.c ft_array_swap.c ft_arrayadd_value.c \
 		ft_arraydel_value.c ft_arraylst_free.c
 
@@ -37,7 +37,7 @@ CHAR := ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isblank.c ft_iscntrl.c \
 CONV := ft_atoi.c ft_itoa.c ft_bintodec.c ft_bintohexa.c ft_bintooctal.c \
 		ft_dectobin.c ft_dectohexa.c ft_dectooctal.c ft_hexatooctal.c \
 		ft_octaltobin.c ft_octaltodec.c ft_tohexa.c ft_itoa_base.c \
-		ft_itoa_uimax.c ft_ftoa.c
+		ft_itoa_uimax.c ft_ftoa.c ft_uitoa.c
 
 CRYPT := ft_crypt_str.c ft_uncrypt_str.c
 
@@ -56,7 +56,7 @@ MALLOC :=	ft_calloc.c
 
 MATH := ft_fibonacci.c ft_is_prime.c ft_power.c ft_sqrt.c ft_swap.c \
 		ft_armstrong.c ft_gcd.c ft_lcm.c ft_palindrome.c ft_abs.c \
-		ft_int_length_uimax.c
+		ft_int_length_uimax.c  ft_surface.c
 
 MEM :=  ft_bzero.c ft_memalloc.c ft_memccpy.c ft_memchr.c ft_memcmp.c \
 		ft_memcpy.c ft_memdel.c ft_memmove.c ft_memset.c
@@ -76,6 +76,8 @@ STR :=	ft_strcat.c ft_strchr.c ft_strclr.c ft_strcmp.c ft_strcpy.c \
 
 VECTOR := ft_vector_base.c ft_vector_insert.c ft_vector_delete.c
 
+NUMBER := ft_intlen.c ft_uintlen.c ft_hexintlen.c ft_long_hexintlen.c 
+
 FILES := $(addprefix char/, $(CHAR)) \
 	$(addprefix conv/, $(CONV)) \
 	$(addprefix lst/, $(LST)) \
@@ -86,10 +88,11 @@ FILES := $(addprefix char/, $(CHAR)) \
 	$(addprefix sort/, $(SORT)) \
 	$(addprefix file/, $(FILE)) \
 	$(addprefix malloc/, $(MALLOC)) \
-	$(addprefix array/, $(ARRAY)) \
 	$(addprefix vector/, $(VECTOR)) \
 	$(addprefix crypt/, $(CRYPT)) \
 	$(addprefix dict/, $(DICT)) \
+	$(addprefix number/, $(NUMBER)) \
+	$(addprefix array/, $(ARRAY)) \
 
 SRC := $(addprefix src/, $(FILES))
 OBJ := $(SRC:%.c=%.o)

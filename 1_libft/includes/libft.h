@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:46:39 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/15 11:16:20 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/29 14:21:56 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,6 @@
 # include "ft_stack.h"
 # include "ft_files.h"
 # include "ft_crypt.h"
+# include "ft_number.h"
 
 #endif

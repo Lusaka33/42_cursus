@@ -6,34 +6,37 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:38:49 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/17 12:10:20 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/30 11:04:00 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+char			*ft_strjoin(char const *s1, char const *s2)
 {
-	char		*locma;
-	unsigned	i;
-	unsigned	j;
+	size_t	i;
+	size_t	j;
+	size_t	len;
+	char	*str;
 
 	i = 0;
 	j = 0;
-	if (!s1 || !s2)
+	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	if (!(locma = (char *)malloc(sizeof(s1) + sizeof(s2) + 1)))
+	len = ft_strlen(s1) + ft_strlen(s2);
+	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
-	while (s1 && *(s1 + i))
+	while (s1[i] != '\0')
 	{
-		*(locma + i) = *(s1 + i);
+		str[i] = s1[i];
 		i++;
 	}
-	while (s2 && *(s2 + j))
+	while (s2[j] != '\0')
 	{
-		*(locma + i + j) = *(s2 + j);
+		str[i] = s2[j];
 		j++;
+		i++;
 	}
-	*(locma + i + j) = '\0';
-	return (locma);
+	str[i] = '\0';
+	return (str);
 }

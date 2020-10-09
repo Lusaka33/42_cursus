@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/10 12:41:15 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/12 19:39:43 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/29 14:26:31 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_dictionary	*create_dict(void)
 	t_dictionary	*locma;
 	int				i;
 
-	if (!(locma = malloc(sizeof(t_dictionary)) == NULL))
+	if (!(locma = malloc(sizeof(t_dictionary))))
 		return (NULL);
 	else
 	{

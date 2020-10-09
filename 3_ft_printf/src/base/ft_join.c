@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:55:25 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 13:55:26 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/09 09:29:31 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 09:29:33 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Alloue (avec malloc(3)) et retourne une nouvelle

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:54:00 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 13:54:01 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/09 11:23:03 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 11:23:05 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Alloue et crée une chaîne de caractères

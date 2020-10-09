@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 17:38:45 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/15 11:11:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/09 11:25:02 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int		ft_palindrome(int number)
 		number /= 10;
 	}
 	if (original_num == reversed_num)
-		printf("%d is a palindrome.", original_num);
+		ft_putstr("is a palindrome.");
 	else
-		printf("%d is not a palindrome.", original_num);
+		ft_putstr("is not a palindrome.");
 	return (OK);
 }

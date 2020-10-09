@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_get_string.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:53:55 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 16:08:06 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/08 12:15:15 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/08 12:15:17 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Imprime les parties de la chaîne de caractères principale de ft_printf()
@@ -24,10 +24,9 @@
 
 int		ft_get_string(const char *str, size_t *ptr_pos)
 {
-	size_t		j;
-	size_t		k;
-	char		*line;
-	t_format	format;
+	size_t	j;
+	size_t	k;
+	char	*line;
 
 	j = *ptr_pos;
 	k = 0;
@@ -43,7 +42,7 @@ int		ft_get_string(const char *str, size_t *ptr_pos)
 	while (str[j] != '%')
 		line[k++] = str[j++];
 	ptr_pos += 1;
-	write(format.fd, line, k);
+	write(1, line, k);
 	free(line);
 	return (k);
 }

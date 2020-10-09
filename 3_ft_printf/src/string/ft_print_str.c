@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_str.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:53:50 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 16:08:06 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/08 12:16:27 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 10:16:52 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Imprime une chaîne de caractères
@@ -39,7 +39,7 @@ int		ft_print_str(t_format format, va_list ap)
 	printed = ft_printed(format.flag, new_buffer, to_add);
 	free(to_add);
 	free(new_buffer);
-	ft_putstr_fd(printed, format.fd);
+	ft_putstr(printed);
 	free(printed);
 	return (nbr_space + format.precision);
 }

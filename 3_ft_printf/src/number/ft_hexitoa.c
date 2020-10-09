@@ -3,40 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexitoa.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:54:35 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 16:12:02 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/09 09:30:58 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 09:31:00 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-size_t	ft_hexintlen(unsigned int n)
-{
-	int i;
-
-	i = 1;
-	while (n > 0)
-	{
-		n /= 16;
-		i++;
-	}
-	return (n);
-}
-
-size_t	ft_long_hexintlen(unsigned long int n)
-{
-	int i;
-
-	i = 1;
-	while (n > 0)
-	{
-		n /= 16;
-		i++;
-	}
-	return (n);
-}
+#include "libftprintf.h"
 
 /*
 ** Alloue (avec malloc(3)) et retourne une chaine de

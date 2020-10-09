@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_int_length_uimax.c                              :+:      :+:    :+:   */
+/*   ft_intlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/16 10:53:22 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/16 10:54:04 by adrossig         ###   ########.fr       */
+/*   Created: 2020/09/29 12:43:16 by adrossig          #+#    #+#             */
+/*   Updated: 2020/09/29 12:43:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_int_length_uimax(uintmax_t n)
-{
-	int		i;
+/*
+** Calcule la longueur d'un entier n, 
+** de type int.
+** =========
+** #1 : un entier n.
+** =========
+** Retourne le nombre de chiffre dans n.
+*/
 
-	if (n < 0)
-		n *= -1;
-	i = 0;
-	while (n >= 10)
-	{
-		n /= 10;
+size_t	ft_intlen(int n)
+{
+	int	i;
+
+	i = 1;
+	while (n /= 10)
 		i++;
-	}
-	return (1 + i);
+	return (i);
 }

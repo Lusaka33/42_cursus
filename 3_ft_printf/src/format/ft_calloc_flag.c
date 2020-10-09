@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:55:04 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 13:55:05 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/09 09:30:33 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 10:17:14 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Alloue et initialise une chaîne avec un caractère donné.

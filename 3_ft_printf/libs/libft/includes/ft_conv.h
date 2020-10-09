@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_conv.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 10:52:48 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 16:22:12 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/29 16:43:36 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int				ft_dectooctal(int decimal);
 int				ft_todec(char *str, int base);
 char			*ft_itoa(int n);
 char			*ft_dectohexa(int decimal);
-char			*ft_uitoa(unsigned int nbr);
+char			*ft_uitoa(unsigned int n);
 char			*ft_itoa_uimax(uintmax_t nb);
 char			*ft_itoa_base(intmax_t value, int base);
 char			*ft_ftoa(long double f, int precision, int dot);

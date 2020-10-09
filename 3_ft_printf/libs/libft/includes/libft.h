@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:46:39 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/15 11:16:20 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/30 09:13:21 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100
+#  define BUFFER_SIZE 4095
 # endif
 
 # define MAXBITS 100
@@ -52,5 +52,6 @@
 # include "ft_stack.h"
 # include "ft_files.h"
 # include "ft_crypt.h"
+# include "ft_number.h"
 
 #endif

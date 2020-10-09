@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_int_add_precision.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:54:30 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 15:45:56 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/09 09:30:12 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 10:27:20 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Alloue (avec malloc(3)) et retourne une chaine de

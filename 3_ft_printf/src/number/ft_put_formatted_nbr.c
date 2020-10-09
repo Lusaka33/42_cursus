@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_put_formatted_nbr.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:54:05 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 16:08:06 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/09 09:55:07 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 09:55:09 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Imprime une chaîne de caractère (post-itoa), après formatage.
@@ -45,7 +45,7 @@ int		ft_put_formatted_nbr(t_format format, char *number)
 	with_width = ft_int_add_width(format, precised);
 	free(precised);
 	len = ft_strlen(with_width);
-	ft_putstr_fd(with_width, format.fd);
+	ft_putstr(with_width);
 	free(with_width);
 	return (len);
 }

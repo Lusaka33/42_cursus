@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_nbr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:54:12 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 15:46:20 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/09 09:55:01 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 10:18:14 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Imprime le caractère un nombre de type "signed int"

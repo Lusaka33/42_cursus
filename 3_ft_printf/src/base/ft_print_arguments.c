@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/23 13:55:21 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 13:55:22 by adrossig         ###   ########.fr       */
+/*   Created: 2020/10/09 09:29:40 by adrossig          #+#    #+#             */
+/*   Updated: 2020/10/09 09:29:43 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /*
 ** Dirige le formatage de la partie de str

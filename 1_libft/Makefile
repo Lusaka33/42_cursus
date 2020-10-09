@@ -55,8 +55,7 @@ LST :=  ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 MALLOC :=	ft_calloc.c
 
 MATH := ft_fibonacci.c ft_is_prime.c ft_power.c ft_sqrt.c ft_swap.c \
-		ft_armstrong.c ft_gcd.c ft_lcm.c ft_palindrome.c ft_abs.c \
-		ft_int_length_uimax.c
+		ft_armstrong.c ft_gcd.c ft_lcm.c ft_palindrome.c ft_abs.c
 
 MEM :=  ft_bzero.c ft_memalloc.c ft_memccpy.c ft_memchr.c ft_memcmp.c \
 		ft_memcpy.c ft_memdel.c ft_memmove.c ft_memset.c
@@ -71,10 +70,12 @@ STR :=	ft_strcat.c ft_strchr.c ft_strclr.c ft_strcmp.c ft_strcpy.c \
 		ft_strjoin.c ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c \
 		ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strndup.c ft_strnequ.c \
 		ft_strnew.c ft_strnstr.c ft_strrchr.c ft_split.c ft_substr.c \
-		ft_strtrim.c ft_strlcpy.c ft_strstr.c ft_strfree.c ft_strnlen.c \
+		ft_strtrim.c ft_strlcpy.c ft_strfree.c ft_strnlen.c \
 		ft_strrev.c ft_tolower_str.c ft_toupper_str.c
 
 VECTOR := ft_vector_base.c ft_vector_insert.c ft_vector_delete.c
+
+NUMBER := ft_intlen.c ft_uintlen.c ft_hexintlen.c ft_long_hexintlen.c 
 
 FILES := $(addprefix char/, $(CHAR)) \
 	$(addprefix conv/, $(CONV)) \
@@ -90,6 +91,7 @@ FILES := $(addprefix char/, $(CHAR)) \
 	$(addprefix vector/, $(VECTOR)) \
 	$(addprefix crypt/, $(CRYPT)) \
 	$(addprefix dict/, $(DICT)) \
+	$(addprefix number/, $(NUMBER)) \
 
 SRC := $(addprefix src/, $(FILES))
 OBJ := $(SRC:%.c=%.o)
