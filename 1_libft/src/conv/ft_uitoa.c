@@ -1,22 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_surface.c                                       :+:      :+:    :+:   */
+/*   ft_uitoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/18 12:08:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 17:50:04 by adrossig         ###   ########.fr       */
+/*   Created: 2020/09/23 16:13:53 by adrossig          #+#    #+#             */
+/*   Updated: 2020/09/29 16:42:56 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_surface(int width, int height)
+char				*ft_uitoa(unsigned int n)
 {
-	int result;
+	unsigned long	tmp;
+	char			*str;
+	size_t			len;
 
-	result = width * height;
-	ft_printf("\t Surface = %d\n", result);
-	return (result);
+	tmp = (unsigned long)n;
+	str = NULL;
+	len = ft_uintlen(tmp);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (str != NULL)
+	{
+		str[len] = '\0';
+		while (len > 0)
+		{
+			str[len - 1] = (tmp % 10) + '0';
+			len--;
+			tmp = tmp / 10;
+		}
+	}
+	return (str);
 }

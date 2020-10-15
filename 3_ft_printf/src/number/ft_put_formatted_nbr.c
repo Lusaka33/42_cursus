@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:55:07 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 09:55:09 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/15 17:59:44 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int		ft_put_formatted_nbr(t_format format, char *number)
 	with_width = ft_int_add_width(format, precised);
 	free(precised);
 	len = ft_strlen(with_width);
-	ft_putstr(with_width);
+	ft_putstr_fd(with_width, format.fd);
 	free(with_width);
 	return (len);
 }

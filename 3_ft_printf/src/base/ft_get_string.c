@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 12:15:15 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/08 12:15:17 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/15 18:02:19 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,10 @@
 
 int		ft_get_string(const char *str, size_t *ptr_pos)
 {
-	size_t	j;
-	size_t	k;
-	char	*line;
+	size_t		j;
+	size_t		k;
+	char		*line;
+	t_format	format;
 
 	j = *ptr_pos;
 	k = 0;
@@ -42,7 +43,7 @@ int		ft_get_string(const char *str, size_t *ptr_pos)
 	while (str[j] != '%')
 		line[k++] = str[j++];
 	ptr_pos += 1;
-	write(1, line, k);
+	write(format.fd, line, k);
 	free(line);
 	return (k);
 }

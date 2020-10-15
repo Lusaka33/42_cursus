@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 17:34:16 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/29 14:20:58 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/15 17:48:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int		ft_gcd(int nbr1, int nbr2)
 		else
 			nbr2 -= nbr1;
 	}
+	ft_printf("Greatest Common Divisor = %d", nbr1);
 	return (OK);
 }

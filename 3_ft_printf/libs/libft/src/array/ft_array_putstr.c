@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_array_putstr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 17:42:36 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 15:08:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/15 17:48:32 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int		ft_array_putstr(t_array *array)
 	while (i < array->size)
 	{
 		i++;
+		ft_printf("%d ", array->array[i]);
 	}
 	ft_putchar('\n');
 	return (OK);

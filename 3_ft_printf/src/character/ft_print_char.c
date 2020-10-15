@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:30:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 09:30:22 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/15 17:58:54 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int		ft_put_formatted_char(t_format format, char c)
 		printed = ft_add_front_to_char(c, to_add);
 	else
 		printed = ft_add_back_to_char(c, to_add);
-	ft_putstr(printed);
+	ft_putstr_fd(printed, format.fd);
 	len = ft_strlen(printed);
 	free(printed);
 	return (len);
@@ -68,14 +68,14 @@ int		ft_print_c(t_format format, va_list ap)
 	if (c == 0 && format.flag == 0)
 	{
 		with_format = ft_put_formatted_char(format, c);
-		write(1, &c, 1);
+		write(format.fd, &c, 1);
 		with_format += 1;
 	}
 	else if (c == 0 && format.flag != 0)
 	{
-		write(1, &c, 1);
+		write(format.fd, &c, 1);
 		while (with_format++ < (format.width - 1))
-			write(1, " ", 1);
+			write(format.fd, " ", 1);
 	}
 	else
 		with_format = ft_put_formatted_char(format, c);

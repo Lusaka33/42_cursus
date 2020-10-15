@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_surface.c                                       :+:      :+:    :+:   */
+/*   ft_int_length_uimax.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/18 12:08:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 17:50:04 by adrossig         ###   ########.fr       */
+/*   Created: 2020/06/16 10:53:22 by adrossig          #+#    #+#             */
+/*   Updated: 2020/06/16 10:54:04 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_surface(int width, int height)
+int		ft_int_length_uimax(uintmax_t n)
 {
-	int result;
+	int		i;
 
-	result = width * height;
-	ft_printf("\t Surface = %d\n", result);
-	return (result);
+	if (n < 0)
+		n *= -1;
+	i = 0;
+	while (n >= 10)
+	{
+		n /= 10;
+		i++;
+	}
+	return (1 + i);
 }

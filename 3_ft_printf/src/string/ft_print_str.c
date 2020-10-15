@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 12:16:27 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 10:16:52 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/15 17:58:17 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int		ft_print_str(t_format format, va_list ap)
 	printed = ft_printed(format.flag, new_buffer, to_add);
 	free(to_add);
 	free(new_buffer);
-	ft_putstr(printed);
+	ft_putstr_fd(printed, format.fd);
 	free(printed);
 	return (nbr_space + format.precision);
 }

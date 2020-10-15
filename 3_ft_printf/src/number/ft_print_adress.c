@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:31:17 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 09:31:19 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/15 17:59:22 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int		ft_print_adr_cp(void *adr, t_format format)
 	number = ft_long_hexitoa((unsigned long)adr, format.specifier);
 	if (format.precision >= (int)ft_strlen(number))
 	{
-		ft_putstr(prefix);
+		ft_putstr_fd(prefix, format.fd);
 		ret += 2;
 		ret += ft_put_formatted_nbr(format, number);
 	}

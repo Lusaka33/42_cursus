@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 10:52:48 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/15 11:16:47 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/29 16:43:36 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,11 @@ int				ft_dectooctal(int decimal);
 int				ft_todec(char *str, int base);
 char			*ft_itoa(int n);
 char			*ft_dectohexa(int decimal);
+char			*ft_uitoa(unsigned int n);
 char			*ft_itoa_uimax(uintmax_t nb);
 char			*ft_itoa_base(intmax_t value, int base);
 char			*ft_ftoa(long double f, int precision, int dot);
+char			*ft_fromdec(int number, int base, char *result);
 char			*ft_tohexa(char *base, unsigned long nbr, unsigned long lenght);
 long long		ft_octaltobin(int octal);
 long long		ft_octaltodec(int octal);

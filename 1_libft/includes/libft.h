@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:46:39 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/29 14:21:56 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/09/30 09:13:21 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100
+#  define BUFFER_SIZE 4095
 # endif
 
 # define MAXBITS 100
