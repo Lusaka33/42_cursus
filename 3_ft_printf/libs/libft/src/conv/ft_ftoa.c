@@ -6,25 +6,22 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 11:00:16 by adrossig          #+#    #+#             */
-/*   Updated: 2020/07/23 11:27:30 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:13:33 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static long double	rounding(int precision, long double f)
-{
-	long double	rounding;
-	int			d;
-
-	rounding = 0.5;
-	if (f < 0)
-		rounding *= -1;
-	d = 0;
-	while (d++ < precision)
-		rounding /= 10.0;
-	return (rounding);
-}
+/*
+** Convertit un nombre à virgule flottante donné ou un double,
+** en une chaîne de caractères.
+** =======
+** #1: Numéro d'entrée.
+** #2: Tableau où la chaîne de sortie doit être stockée.
+** #3: Nombre de chiffres à prendre en compte après le point.
+** =======
+** Retourne la chaine de caractères représentant le float.
+*/
 
 char				*ft_ftoa(long double f, int precision, int dot)
 {
@@ -34,7 +31,7 @@ char				*ft_ftoa(long double f, int precision, int dot)
 	char				*joint;
 	int					i;
 
-	f = f + rounding(precision, f);
+	f = f + ft_rounding(precision, f);
 	f *= (f < 0) ? -1 : 1;
 	dec = f;
 	ipart = ft_itoa_uimax(dec);

@@ -6,11 +6,19 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 15:02:55 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/15 11:11:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:14:06 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Converti un hexadecimal en nombre octal.
+** =======
+** #1: Decimal de type char.
+** =======
+** Retourne le résultat de la conversion en entier de type long long.
+*/
 
 long long	ft_hexatooctal(char *hex)
 {

@@ -6,11 +6,19 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/23 11:28:16 by adrossig          #+#    #+#             */
-/*   Updated: 2020/07/23 11:28:42 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:21:48 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Converti un nombre octal en nombre decimal.
+** =======
+** #1: octal de type int.
+** =======
+** Retourne le résultat de la conversion en entier de type long long.
+*/
 
 long long	ft_octaltodec(int octal)
 {

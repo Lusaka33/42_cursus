@@ -6,11 +6,21 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:40:47 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:07:57 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/26 15:12:09 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Copie les n premiers octets de src dans dest.
+** =======
+** #1 : La chaine de caractères de destination.
+** #2 : La chaine de caractères source.
+** #3 : le nombre de caractères à copier.
+** =======
+** Retourne un pointeur sur dst modifiée.
+*/
 
 char	*ft_strncpy(char *dest, const char *src, size_t i)
 {

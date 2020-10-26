@@ -3,14 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:27:12 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:27:02 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Libère la mémoire de l’élément passé en argument
+** en utilisant la fonction del puis avec free(3).
+** La mémoire de next ne doit pas être libérée.
+** =======
+** #1 : l’adresse du pointeur vers un élément.
+** #2 : l’adresse de la fonction permettant
+**		de supprimer le contenu d’un élément.
+** =======
+*/
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {

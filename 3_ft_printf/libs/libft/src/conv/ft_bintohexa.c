@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bintohexa.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 12:46:52 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/19 17:24:00 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 11:57:41 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Converti un binaire en nombre hexadecimal.
+** =======
+** #1: Binaire de type int.
+** =======
+** Retourne le résultat de la conversion en entier de type int.
+*/
 
 int		ft_bintohexa(int binary)
 {

@@ -6,11 +6,23 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 10:45:44 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/16 10:46:49 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:14:52 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Alloue (avec malloc(3)) et retourne une chaine de
+** caractères représentant un integer n reçu en argument.
+** Les nombres négatifs doivent être gérés.
+** =======
+** #1: l'integer à convertir.
+** #2: la base de convertion.
+** =======
+** Retourne la chaine de caractères représentant l’integer,
+** NULL si l’allocation échoue.
+*/
 
 int		value_len(uintmax_t nb, int base)
 {

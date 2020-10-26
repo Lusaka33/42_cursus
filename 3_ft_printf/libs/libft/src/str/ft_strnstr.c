@@ -3,14 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:43:05 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/26 15:12:40 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Cherche la première occurrence de la sous-chaîne needle
+** au sein de la chaîne haystack dans laquelle pas plus de
+** len caractères sont examinés.
+** Les caractères nuls de fin ne sont pas comparés.
+** =========
+** #1 : une chaîne de caractères à examiner.
+** #2 : une chaîne de caractères à chercher.
+** #3 : le nombre maximal de caractères à parser. 
+** =========
+** Retourne un pointeur sur le premier caractère de la première
+** occurence de needle dans haystack, haystack si needle est une chaîne vide,
+** ou NULL si needle n'est pas trouvée dans haystack.
+*/
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {

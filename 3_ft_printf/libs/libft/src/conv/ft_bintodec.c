@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bintodec.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:53:06 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 11:57:27 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Converti un binaire en nombre decimal.
+** =======
+** #1: Binaire de type int.
+** =======
+** Retourne le résultat de la conversion en entier de type int.
+*/
 
 int		ft_bintodec(int binary)
 {

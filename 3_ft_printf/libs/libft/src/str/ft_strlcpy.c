@@ -6,11 +6,23 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:39:19 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/15 11:11:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/26 15:09:37 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Copie la chaîne de caractères src dans dst
+** jusqu'à dstsize caractères.
+** =========
+** #1 : une chaîne de caractères de destination.
+** #2 : une chaîne de caractères source.
+** #3 : le nombre maximal de caractères de dst à ajouter. 
+** =========
+** Retourne le nombre total de caractères de la chaîne dst
+** après copie.
+*/
 
 size_t		ft_strlcpy(char *dest, const char *src, size_t size)
 {

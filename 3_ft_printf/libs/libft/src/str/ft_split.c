@@ -6,11 +6,24 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/13 10:50:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 10:59:15 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/26 15:07:40 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Alloue (avec malloc(3)) un tableau
+** de chaines de caractères obtenu en séparant s à
+** l’aide du caractère c, utilisé comme délimiteur.
+** Le tableau doit être terminé par NULL.
+** =======
+** #1 : La chaine de caractères à découper.
+** #2 : Le caractère délimitant.
+** =======
+** Retourne le tableau de nouvelles chaînes de caractères,
+** NULL si l’allocation échoue.
+*/
 
 static int	ft_seg(const char *s, char c)
 {

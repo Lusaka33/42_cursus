@@ -6,11 +6,19 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:52:40 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/29 16:44:05 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 11:56:29 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Converti le début de la chaîne pointée en entier.
+** =======
+** #1: un pointeur vers une chaîne de caractères.
+** =======
+** Retourne le résultat de la conversion en entier de type int.
+*/
 
 int	ft_atoi(const char *str)
 {

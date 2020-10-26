@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_octaltobin.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 16:02:41 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/19 17:35:06 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:21:36 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+
+/*
+** Converti un nombre octal en nombre binaire.
+** =======
+** #1: octal de type int.
+** =======
+** Retourne le résultat de la conversion en entier de type long long.
+*/
 
 long long	ft_octaltobin(int octal)
 {

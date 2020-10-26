@@ -37,7 +37,7 @@ CHAR := ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isblank.c ft_iscntrl.c \
 CONV := ft_atoi.c ft_itoa.c ft_bintodec.c ft_bintohexa.c ft_bintooctal.c \
 		ft_dectobin.c ft_dectohexa.c ft_dectooctal.c ft_hexatooctal.c \
 		ft_octaltobin.c ft_octaltodec.c ft_tohexa.c ft_itoa_base.c \
-		ft_itoa_uimax.c ft_ftoa.c ft_uitoa.c
+		ft_itoa_uimax.c ft_ftoa.c ft_uitoa.c ft_hexitoa.c
 
 CRYPT := ft_crypt_str.c ft_uncrypt_str.c
 
@@ -56,7 +56,7 @@ MALLOC :=	ft_calloc.c
 
 MATH := ft_fibonacci.c ft_is_prime.c ft_power.c ft_sqrt.c ft_swap.c \
 		ft_armstrong.c ft_gcd.c ft_lcm.c ft_palindrome.c ft_abs.c \
-		ft_int_length_uimax.c  ft_surface.c
+		ft_int_length_uimax.c ft_surface.c
 
 MEM :=  ft_bzero.c ft_memalloc.c ft_memccpy.c ft_memchr.c ft_memcmp.c \
 		ft_memcpy.c ft_memdel.c ft_memmove.c ft_memset.c
@@ -76,7 +76,15 @@ STR :=	ft_strcat.c ft_strchr.c ft_strclr.c ft_strcmp.c ft_strcpy.c \
 
 VECTOR := ft_vector_base.c ft_vector_insert.c ft_vector_delete.c
 
-NUMBER := ft_intlen.c ft_uintlen.c ft_hexintlen.c ft_long_hexintlen.c 
+NUMBER := ft_intlen.c ft_uintlen.c ft_hexintlen.c ft_long_hexintlen.c
+
+PRINTF :=	base/ft_get_string.c base/ft_join.c base/ft_print_arguments.c \
+			character/ft_char_add_width.c character/ft_int_add_precision.c \
+			character/ft_print_char.c format/ft_calloc_flag.c format/ft_check_format.c \
+			format/ft_get_format.c number/ft_int_add_width.c number/ft_print_adress.c \
+			number/ft_print_nbr.c number/ft_put_formatted_nbr.c \
+			string/ft_extract_buffer_part.c string/ft_print_str.c ft_format_arg.c \
+			ft_printf.c
 
 FILES := $(addprefix char/, $(CHAR)) \
 	$(addprefix conv/, $(CONV)) \
@@ -93,6 +101,7 @@ FILES := $(addprefix char/, $(CHAR)) \
 	$(addprefix dict/, $(DICT)) \
 	$(addprefix number/, $(NUMBER)) \
 	$(addprefix array/, $(ARRAY)) \
+	$(addprefix printf/, $(PRINTF)) \
 
 SRC := $(addprefix src/, $(FILES))
 OBJ := $(SRC:%.c=%.o)

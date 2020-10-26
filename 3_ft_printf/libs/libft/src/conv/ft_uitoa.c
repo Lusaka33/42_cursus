@@ -6,11 +6,21 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 16:13:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/29 16:42:56 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:24:31 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Alloue (avec malloc(3)) et retourne une chaine de
+** caractères représentant un unsigned integer n reçu en argument.
+** =======
+** #1 : l'integer à convertir.
+** =======
+** Retourne la chaine de caractères représentant n,
+** NULL si l’allocation échoue.
+*/
 
 char				*ft_uitoa(unsigned int n)
 {

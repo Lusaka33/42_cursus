@@ -6,54 +6,46 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:25:38 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 10:50:42 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:19:07 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_itoa_bis(int count, int sign, int div, long nb)
+/*
+** Alloue (avec malloc(3)) et retourne une chaine de
+** caractères représentant un integer n reçu en argument.
+** Les nombres négatifs doivent être gérés.
+** =======
+** #1 : l'integer à convertir.
+** =======
+** Retourne la chaine de caractères représentant l’integer,
+** NULL si l’allocation échoue.
+*/
+
+char				*ft_itoa(int n)
 {
-	char	*s;
-	long	res;
-	int		i;
+	long			tmp;
+	char			*str;
+	size_t			len;
 
-	res = 0;
-	i = 0;
-	if (!(s = malloc(sizeof(char) * (count + 1 + sign + 1))))
-		return (NULL);
-	if (sign == 1)
-		*(s + i++) = '-';
-	while (div > 0)
+	tmp = (long)n;
+	str = NULL;
+	len = ft_intlen(tmp) + (n < 0 ? 1 : 0);
+	if (n < 0)
+		tmp = (tmp * -1);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (str != NULL)
 	{
-		res = (nb / div) % 10;
-		*(s + i++) = res + 48;
-		div = div / 10;
+		str[len] = '\0';
+		while (len > 0)
+		{
+			str[len - 1] = (tmp % 10) + '0';
+			len--;
+			tmp = tmp / 10;
+		}
+		if (n < 0)
+			str[0] = '-';
 	}
-	*(s + i) = '\0';
-	return (s);
-}
-
-char		*ft_itoa(int n)
-{
-	int		div;
-	int		count;
-	int		sign;
-	long	nb;
-
-	div = 1;
-	sign = 0;
-	count = 0;
-	nb = (long)n;
-	if (nb < 0)
-	{
-		sign++;
-		nb *= -1;
-	}
-	while (nb / div >= 10)
-	{
-		div = div * 10;
-		count++;
-	}
-	return (ft_itoa_bis(count, sign, div, nb));
+	return (str);
 }

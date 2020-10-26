@@ -6,11 +6,18 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 10:55:03 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/18 11:30:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/26 15:06:38 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Écrit la chaîne de caractères s.
+** =========
+** #1 : la chaîne à écrire.
+** =========
+*/
 
 void	ft_putendl(const char *s)
 {

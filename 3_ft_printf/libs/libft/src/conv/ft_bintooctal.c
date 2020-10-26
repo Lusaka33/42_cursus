@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bintooctal.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 15:53:10 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/19 17:29:51 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 11:57:56 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Converti un binaire en nombre octal.
+** =======
+** #1: Binaire de type int.
+** =======
+** Retourne le résultat de la conversion en entier de type int.
+*/
 
 int		ft_bintooctal(int binary)
 {

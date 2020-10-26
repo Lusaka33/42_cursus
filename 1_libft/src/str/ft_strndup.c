@@ -6,11 +6,22 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:41:03 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:08:35 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/26 15:12:24 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Alloue avec malloc (3) un emplacement mémoire
+** dans lequelle elle copie les n premiers caractères de s1.
+** =========
+** #1 : une chaîne de caractères à dupliquer.
+** #2 : la taille de la partie à dupliquer.
+** =========
+** Retourne un pointeur sur la chaîne dupliquée depuis s1,
+** ou NULL s'il l'allocation dynamique de mémoire échoue.
+*/
 
 char	*ft_strndup(const char *s, size_t n)
 {

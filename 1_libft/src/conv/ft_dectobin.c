@@ -6,11 +6,19 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 15:12:50 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/15 11:11:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 11:58:27 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Converti un decimal en nombre binaire.
+** =======
+** #1: Decimal de type int.
+** =======
+** Retourne le résultat de la conversion en entier de type long long.
+*/
 
 long long		ft_dectobin(int decimal)
 {

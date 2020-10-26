@@ -3,14 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:37:32 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/26 15:08:57 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Depuis une chaîne de caractères s1, en crée une nouvelle
+** dont la mémoire occupée est obtenue par un appel de malloc(3).
+** =======
+** #1 : chaîne à dupliquer.
+** =======
+** Retourne un pointeur sur la chaîne dupliquée depuis s1,
+** ou NULL s'il l'allocation dynamique de mémoire échoue.
+*/
 
 char	*ft_strdup(const char *str)
 {

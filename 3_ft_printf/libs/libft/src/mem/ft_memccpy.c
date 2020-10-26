@@ -3,14 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:30:35 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:29:54 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Copie au plus n octets de la zone mémoire src
+** vers la zone mémoire dst, s'arrêtant dès qu'elle
+** rencontre le caractère c.
+** =========
+** #1 : la chaîne de destination.
+** #2 : la chaîne source.
+** #3 : le caractère à chercher.
+** #4 : le nombre maximal d'octets à copier.
+** =========
+** Retourne un pointeur sur le caractère  
+** immédiatement après c dans dst, NULL si c n'a pas été trouvé
+** dans les n premiers caractères de src.
+*/
 
 void		*ft_memccpy(void *str1, const void *str2, int c, size_t n)
 {

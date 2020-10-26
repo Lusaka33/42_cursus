@@ -3,14 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:47:33 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/23 15:47:39 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/26 15:13:09 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Alloue (avec malloc(3)) et retourne une copie de
+** la chaine s1, sans les caractères spécifiés
+** dans set au début et à la fin de la chaine de
+** caractères.
+** =======
+** #1 : La chaine de caractères préfixe.
+** #2 : La chaine de caractères suffixe.
+** =======
+** Retourne un pointeur sur la nouvelle chaîne,
+** ou NULL s'il l'allocation dynamique de mémoire échoue.
+*/
 
 char	*ft_strtrim(const char *s1, const char *set)
 {

@@ -3,14 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tohexa.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 11:29:29 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/19 17:36:01 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:24:17 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Converti un nombre de n'importe quel type en nombre hexadecimal.
+** =======
+** #1: la base de convertions (ex: base 10).
+** #2: le nombre a convertir.
+** #3: la longueur.
+** =======
+** Retourne le résultat de la conversion en entier de type long long.
+*/
 
 char	*ft_tohexa(char *base, unsigned long nbr, unsigned long lenght)
 {

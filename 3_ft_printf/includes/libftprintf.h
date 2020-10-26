@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 11:22:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 17:54:04 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/15 18:12:50 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,8 +146,6 @@ void			ft_char_cp(char c, int	*p_with_form);
 **Number
 */
 
-char			*ft_hexitoa(unsigned int n, char c);
-char			*ft_long_hexitoa(unsigned long n, char c);
 char			*ft_int_add_precision(char	*nbr, int precision);
 char			*ft_int_add_width(t_format form, char *nbr);
 int				ft_put_formatted_nbr(t_format form, char	*number);

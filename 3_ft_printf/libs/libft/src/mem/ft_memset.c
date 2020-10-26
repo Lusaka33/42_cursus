@@ -6,11 +6,22 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:32:05 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:14:36 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:30:57 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Remplit les n premiers octets de la zone mémoire
+** pointée par s avec l'octet c.
+** =========
+** #1 : la zone mémoire pointée.
+** #2 : l'octet donné pour le remplissage.
+** #3 : le nombre d'octets à remplir. 
+** =========
+** Retourne un pointeur vers la zone mémoire s.
+*/
 
 void	*ft_memset(void *str, int i, size_t n)
 {
