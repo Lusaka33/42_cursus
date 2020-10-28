@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_arraydel_value.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 11:43:31 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/19 17:21:50 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 17:59:49 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_array.h"
 
 int		ft_arraydel_value(t_array *array, int value)
 {

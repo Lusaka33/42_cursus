@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 11:35:41 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/29 12:44:29 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 17:59:25 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # define POSITION_EMPTY 4
 # define ARRAY_FULL 5
 
-# include <stdlib.h>
+# include "libft.h"
 
 typedef struct	s_array
 {

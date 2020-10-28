@@ -37,7 +37,7 @@ CHAR := ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isblank.c ft_iscntrl.c \
 CONV := ft_atoi.c ft_itoa.c ft_bintodec.c ft_bintohexa.c ft_bintooctal.c \
 		ft_dectobin.c ft_dectohexa.c ft_dectooctal.c ft_hexatooctal.c \
 		ft_octaltobin.c ft_octaltodec.c ft_tohexa.c ft_itoa_base.c \
-		ft_itoa_uimax.c ft_ftoa.c ft_uitoa.c ft_hexitoa.c
+		ft_itoa_uimax.c ft_ftoa.c ft_uitoa.c ft_hexitoa.c ft_todec.c
 
 CRYPT := ft_crypt_str.c ft_uncrypt_str.c
 
@@ -52,14 +52,12 @@ LST :=  ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 		ft_lst_putendl.c ft_lst_putstr.c ft_lst_putstr_fd.c \
 		ft_lstlenght.c
 
-MALLOC :=	ft_calloc.c
-
 MATH := ft_fibonacci.c ft_is_prime.c ft_power.c ft_sqrt.c ft_swap.c \
 		ft_armstrong.c ft_gcd.c ft_lcm.c ft_palindrome.c ft_abs.c \
-		ft_int_length_uimax.c ft_surface.c
+		ft_int_length_uimax.c ft_surface.c ft_rounding.c
 
 MEM :=  ft_bzero.c ft_memalloc.c ft_memccpy.c ft_memchr.c ft_memcmp.c \
-		ft_memcpy.c ft_memdel.c ft_memmove.c ft_memset.c
+		ft_memcpy.c ft_memdel.c ft_memmove.c ft_memset.c ft_calloc.c
 
 PRINT :=	ft_putchar.c ft_putnbr.c ft_putstr.c ft_putchar_fd.c ft_putstr_fd.c \
 			ft_putendl_fd.c ft_putnbr_fd.c ft_putendl.c
@@ -95,7 +93,6 @@ FILES := $(addprefix char/, $(CHAR)) \
 	$(addprefix str/, $(STR)) \
 	$(addprefix sort/, $(SORT)) \
 	$(addprefix file/, $(FILE)) \
-	$(addprefix malloc/, $(MALLOC)) \
 	$(addprefix vector/, $(VECTOR)) \
 	$(addprefix crypt/, $(CRYPT)) \
 	$(addprefix dict/, $(DICT)) \

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lst_putstr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 10:48:01 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/19 17:26:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:05:48 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_list.h"
 
 void	ft_lst_putstr(t_list *elem)
 {

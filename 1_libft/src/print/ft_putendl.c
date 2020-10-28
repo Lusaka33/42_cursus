@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 10:55:03 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:06:38 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:08:58 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_print.h"
 
 /*
 ** Écrit la chaîne de caractères s.

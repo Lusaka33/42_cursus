@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:39:49 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:06:17 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 10:23:47 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 char			*ft_strmap(const char *s, char (*f)(char))
 {

@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:43:19 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:12:54 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 10:55:51 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 /*
 ** Recherche le caractère c dans la chaîne s.
@@ -24,16 +24,17 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int		i;
-	char	*temp;
-
-	temp = (char *)str;
-	i = ft_strlen(str);
-	while (*(temp + i) != (char)c)
+	const char *found;
+	const char *p;
+	
+	c = (unsigned char) c;
+	if (c == '\0')
+		return (ft_strchr(str, '\0'));
+	found = NULL;
+	while ((p = ft_strchr(str, c)) != NULL)
 	{
-		if (i == 0)
-			return (NULL);
-		i--;
+		found = p;
+		str = p + 1;
 	}
-	return (temp + i);
+	return ((char *)found);
 }

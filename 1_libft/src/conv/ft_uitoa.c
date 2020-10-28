@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 16:13:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:24:31 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:03:38 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_conv.h"
 
 /*
 ** Alloue (avec malloc(3)) et retourne une chaine de

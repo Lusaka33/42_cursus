@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 17:42:36 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 17:48:32 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 17:59:36 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_array.h"
 
 int		ft_array_putstr(t_array *array)
 {

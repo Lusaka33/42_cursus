@@ -6,12 +6,14 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 10:55:55 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/22 13:05:15 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:10:43 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_VECTOR_H
 # define FT_VECTOR_H
+
+# include "libft.h"
 
 typedef void	(*t_free)(void**);
 typedef void	*(*t_dup)(void*);

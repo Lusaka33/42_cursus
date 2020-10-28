@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 14:00:56 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:24:37 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:03:33 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_conv.h"
 
 /*
 ** Converti un nombre de n'importe quel type en nombre decimal.

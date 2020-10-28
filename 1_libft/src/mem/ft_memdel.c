@@ -3,20 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:31:36 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:08:11 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
 
 void	ft_memdel(void **ap)
 {
-	if (*ap != NULL)
-	{
-		free(*ap);
-		*ap = NULL;
-	}
+	if (!ap || !*ap)
+		return ;
+	free(*ap);
+	*ap = NULL;
 }

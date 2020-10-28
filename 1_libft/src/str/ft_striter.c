@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:38:17 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:03:48 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 10:23:23 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 void	ft_striter(char *s, void (*f)(char *))
 {

@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:32:05 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:30:57 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:08:18 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
 
 /*
 ** Remplit les n premiers octets de la zone mémoire

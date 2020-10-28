@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:34:03 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:05:58 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:09:03 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_print.h"
 
 /*
 ** Écrit l’integer nb.

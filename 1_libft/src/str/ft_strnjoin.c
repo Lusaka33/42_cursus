@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/10 12:01:21 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/19 17:54:54 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 10:24:23 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 char	*ft_strnjoin(char *s1, char *s2, int n)
 {

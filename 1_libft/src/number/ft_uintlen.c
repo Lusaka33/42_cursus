@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 12:43:25 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/29 12:43:31 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:08:36 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_number.h"
 
 /*
 ** Calcule la longueur d'un entier n,

@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:36:29 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 12:08:00 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 void	ft_strclr(char *s)
 {
-	size_t size;
-
-	size = ft_strlen(s);
-	while (size--)
-		*(s + size) = '\0';
+	if (s)
+		while (*s)
+			*s++ = '\0';
 }

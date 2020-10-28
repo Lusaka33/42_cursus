@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/23 11:28:16 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:21:48 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:03:26 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_conv.h"
 
 /*
 ** Converti un nombre octal en nombre decimal.

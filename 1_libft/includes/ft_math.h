@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/15 10:57:43 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/30 10:42:29 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/27 18:11:07 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ int				ft_perimeter(int width, int height);
 double			ft_sqrt(double nbr);
 int				ft_int_length_uimax(uintmax_t n);
 void			ft_swap(int *a, int *b);
+long double		ft_rounding(int precision, long double f);
 
 #endif

@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:32:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:04:04 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:08:47 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_print.h"
 
 /*
 ** Écrit le caractère c sur le file descriptor donné.

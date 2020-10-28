@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:40:20 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 12:05:07 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 char	*ft_strncat(char *dest, const char *src, size_t n)
 {
-	unsigned	i;
-	size_t		size;
+	size_t	i;
+	size_t	size;
 
 	i = 0;
-	size = ft_strlen(dest);
+	size = (size_t)ft_strlen(dest);
 	while (i < n && *(src + i))
 	{
 		*(dest + size + i) = *(src + i);

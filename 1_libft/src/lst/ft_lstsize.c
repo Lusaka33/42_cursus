@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:29:40 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:28:23 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:06:39 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_list.h"
 
 /*
 ** Compte le nombre d'éléments de la liste.

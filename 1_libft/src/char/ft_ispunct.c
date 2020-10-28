@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:24:49 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 11:51:53 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:02:03 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_char.h"
 
 /*
 ** Vérifie si le caractère c est un caractère de ponctuation.

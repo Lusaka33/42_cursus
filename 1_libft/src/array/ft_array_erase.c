@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 11:46:55 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 10:46:15 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 17:59:02 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_array.h"
 
 int		ft_array_erase(t_array *array)
 {

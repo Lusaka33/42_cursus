@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/10 16:50:14 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/12 19:46:26 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:04:32 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # ifndef MAXELEMENTS
 #  define MAXELEMENTS 1000
 # endif
+
+# include "libft.h"
 
 typedef struct	s_dictionary
 {

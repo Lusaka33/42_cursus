@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_array_reverse.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 11:52:01 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/19 17:22:09 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 17:59:39 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_array.h"
 
 int		ft_array_reverse(t_array *array)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_conv.h"
 
 /*
 ** Converti un decimal en nombre binaire.

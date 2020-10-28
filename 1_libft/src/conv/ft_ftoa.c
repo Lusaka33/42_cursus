@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 11:00:16 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:13:33 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:02:47 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_conv.h"
 
 /*
 ** Convertit un nombre à virgule flottante donné ou un double,

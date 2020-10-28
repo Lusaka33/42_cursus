@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:20:17 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:13:43 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:09:22 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_sort.h"
 
 void	ft_insertsort(int *a, int b)
 {

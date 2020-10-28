@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:37:47 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/18 11:30:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 10:23:14 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 int		ft_strequ(const char *s1, const char *s2)
 {

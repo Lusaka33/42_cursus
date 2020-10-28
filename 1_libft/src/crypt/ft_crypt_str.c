@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 11:23:24 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/18 11:38:55 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:03:52 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_crypt.h"
 
 static int	entry(int min, int max, int nbr)
 {

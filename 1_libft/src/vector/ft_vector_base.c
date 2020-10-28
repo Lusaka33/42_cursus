@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 10:54:31 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 11:12:10 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:10:21 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_vector.h"
 
 int		ft_vector_init(t_vector *vector, size_t max, t_free free, t_dup dup)
 {

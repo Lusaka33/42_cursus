@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 14:19:25 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:22:57 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:02:42 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_conv.h"
 
 /*
 ** Converti un nombre decimal un un autre type (ex: binaire, octal ou hexa).

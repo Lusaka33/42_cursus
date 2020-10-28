@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 15:02:55 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:14:06 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:02:49 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_conv.h"
 
 /*
 ** Converti un hexadecimal en nombre octal.

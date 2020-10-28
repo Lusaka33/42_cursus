@@ -3,21 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:30:08 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:07:54 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
 
 void	*ft_memalloc(size_t size)
 {
 	void *memory;
 
-	if (!(memory = malloc(sizeof(memory) * size)))
+	if (!(memory = malloc(size)))
 		return (NULL);
-	ft_bzero(memory, size);
-	return (memory);
+	return (ft_memset(memory, 0x0, size));
 }

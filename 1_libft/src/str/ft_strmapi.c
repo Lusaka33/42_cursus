@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:40:06 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:10:04 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 12:10:03 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 /*
 ** Applique la fonction f à chaque caractère de la
@@ -27,14 +27,19 @@
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	char	*str;
-	size_t	size;
+
+	unsigned int	i;
+	char			*mapped;
 
 	if (!s || !f)
 		return (NULL);
-	size = ft_strlen(s);
-	str = ft_strnew(size);
-	while (size--)
-		*(str + size) = f(size, *(s + size));
-	return (str);
+	if (!(mapped = ft_strnew(ft_strlen((char*)s))))
+		return (NULL);
+	i = 0;
+	while (s[i])
+	{
+		mapped[i] = (*f)(i, s[i]);
+		i++;
+	}
+	return (mapped);
 }

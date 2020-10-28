@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_number.h"
 
 /*
 ** Calcule la longueur d'un entier n,

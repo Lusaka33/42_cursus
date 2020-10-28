@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:54:51 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:29:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:07:48 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
 
 /*
 ** Alloue (avec malloc(3)) la mémoire nécessaire pour un tableau

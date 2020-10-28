@@ -3,21 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:41:36 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/17 16:35:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 12:11:40 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 char	*ft_strnew(size_t size)
 {
-	char *locma;
-
-	if (!(locma = (char *)malloc(sizeof(char) * (size + 1))))
-		return (NULL);
-	ft_bzero(locma, size);
-	return (locma);
+	return (ft_memalloc(size + 1));
 }

@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/13 10:50:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:07:40 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 10:22:38 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 /*
 ** Alloue (avec malloc(3)) un tableau

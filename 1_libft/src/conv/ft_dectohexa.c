@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 14:05:27 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:00:28 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:02:37 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_conv.h"
 
 /*
 ** Converti un decimal en nombre hexadecimal.

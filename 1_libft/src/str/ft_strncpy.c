@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:40:47 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:12:09 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 12:03:37 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 /*
 ** Copie les n premiers octets de src dans dest.
@@ -24,17 +24,15 @@
 
 char	*ft_strncpy(char *dest, const char *src, size_t i)
 {
-	unsigned j;
+	size_t	j;
 
 	j = 0;
-	while ((*(src + j) != '\0') && j < i)
-	{
-		*(dest + j) = *(src + j);
-		j++;
-	}
 	while (j < i)
 	{
-		*(dest + j) = '\0';
+		dest[j] = src[j];
+		if (!src[j])
+			while (j < i)
+				dest[j++] = '\0';
 		j++;
 	}
 	return (dest);

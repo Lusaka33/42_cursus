@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 11:02:40 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:15:10 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 10:25:11 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 /*
 ** Convertit le nombre de character en MAJ, si possible.

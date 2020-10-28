@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:37:32 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:08:57 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 10:23:09 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
 /*
 ** Depuis une chaîne de caractères s1, en crée une nouvelle

@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:33:07 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:06:57 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:08:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_print.h"
 
 /*
 ** Écrit le caractère c.
@@ -21,5 +21,5 @@
 
 void	ft_putchar(char c)
 {
-	write(1, &c, 1);
+	ft_putchar_fd(c, 1);
 }

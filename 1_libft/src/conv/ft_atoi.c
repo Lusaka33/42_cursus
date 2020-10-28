@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:52:40 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 11:56:29 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:02:21 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_conv.h"
 
 /*
 ** Converti le début de la chaîne pointée en entier.
@@ -22,25 +22,18 @@
 
 int	ft_atoi(const char *str)
 {
-	int i;
-	int minus;
-	int nbr;
+	size_t	i;
+	int		sign;
+	int		nb;
 
 	i = 0;
-	minus = 1;
-	nbr = 0;
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+	nb = 0;
+	sign = 1;
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
-	if (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-			minus = -1;
-		i++;
-	}
+	if (str[i] == '+' || str[i] == '-')
+		sign *= (str[i++] == '-' ? -1 : 1);
 	while (str[i] >= '0' && str[i] <= '9')
-	{
-		nbr = (nbr * 10) + str[i] - 48;
-		i++;
-	}
-	return (nbr * minus);
+		nb = (nb * 10) + (str[i++] - '0');
+	return (sign * nb);
 }

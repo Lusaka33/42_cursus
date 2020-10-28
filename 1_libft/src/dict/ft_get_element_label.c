@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_get_element_label.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.s19.be>         +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/10 12:57:28 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/10 17:43:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:04:46 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_dict.h"
 
 void	*ft_get_element_label(t_dictionary *dict, char *string)
 {

@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:19:34 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 10:52:25 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:05:11 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_files.h"
 
 char	*ft_files_input(int fd)
 {

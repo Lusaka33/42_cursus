@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:33:47 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 15:04:31 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:09:00 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_print.h"
 
 /*
 ** Écrit l’integer n sur le file descriptor donné.

@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:54:07 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 12:29:36 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 16:32:35 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
 
 /*
 ** Remplit les n premiers octets de la zone mémoire
@@ -23,12 +23,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
+	char *temp;
 
-	i = 0;
-	while (i < n)
-	{
-		((char*)s)[i] = 0;
-		i++;
-	}
+	temp = s;
+	while (n--)
+		*temp++ = 0x0;
 }

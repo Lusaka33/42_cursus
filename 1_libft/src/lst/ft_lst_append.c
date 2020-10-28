@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lst_append.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrossig <adrossig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 17:53:08 by adrossig          #+#    #+#             */
-/*   Updated: 2019/12/18 17:53:08 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:05:38 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_list.h"
 
 t_list	*ft_lstappend(t_list *head, t_list *last)
 {

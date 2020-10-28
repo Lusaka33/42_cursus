@@ -6,11 +6,11 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:23:56 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 11:48:14 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:01:54 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_char.h"
 
 /*
 ** Vérifie si le caractère c a une représentation graphique.
