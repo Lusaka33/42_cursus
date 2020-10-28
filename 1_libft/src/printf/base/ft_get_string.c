@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 12:15:15 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 18:02:19 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:27:20 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int		ft_get_string(const char *str, size_t *ptr_pos)
 	}
 	*ptr_pos += 1;
 	if (!(line = malloc(sizeof(char) * (k + 1))))
-		return (-1);
+		return (KO);
 	k = 0;
 	while (str[j] != '%')
 		line[k++] = str[j++];

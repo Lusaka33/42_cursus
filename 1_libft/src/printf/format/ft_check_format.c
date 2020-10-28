@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:30:39 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 09:30:42 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:29:18 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@
 int	ft_check_format(t_format format)
 {
 	if (format.flag == -1)
-		return (-1);
+		return (KO);
 	else if (format.width == -1)
-		return (-1);
+		return (KO);
 	else if (format.precision == -2)
-		return (-1);
+		return (KO);
 	else if (format.specifier == '0')
-		return (-1);
+		return (KO);
 	else
-		return (0);
+		return (OK);
 }

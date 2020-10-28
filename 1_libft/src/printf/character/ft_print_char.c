@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:30:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 17:58:54 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:29:01 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ int		ft_print_per(t_format format)
 
 	c = '%';
 	if (format.specifier != '%')
-		return (-1);
+		return (KO);
 	with_format = ft_put_formatted_char(format, c);
 	return (with_format);
 }

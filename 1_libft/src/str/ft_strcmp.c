@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:36:46 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:41:42 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:29:19 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ int		ft_strcmp(const char *str1, const char *str2)
 {
 	while (*str1 == *str2++)
 		if (*str1++ == 0)
-			return (0);
+			return (OK);
 	return (*(unsigned char *)str1 - *(unsigned char *) --str2);
 }

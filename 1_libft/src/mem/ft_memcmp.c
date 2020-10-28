@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:31:09 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:27:17 by adrossig         ###   ########.fr       */
+/*   Updated: 2020/10/28 18:29:17 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,5 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 				return (*--p1 - *--p2);
 		}
 	}
-	return (0);
+	return (OK);
 }
