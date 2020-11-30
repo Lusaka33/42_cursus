@@ -94,7 +94,6 @@ FILES := $(addprefix char/, $(CHAR)) \
 	$(addprefix sort/, $(SORT)) \
 	$(addprefix file/, $(FILE)) \
 	$(addprefix vector/, $(VECTOR)) \
-	$(addprefix crypt/, $(CRYPT)) \
 	$(addprefix dict/, $(DICT)) \
 	$(addprefix number/, $(NUMBER)) \
 	$(addprefix array/, $(ARRAY)) \
