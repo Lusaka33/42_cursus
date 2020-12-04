@@ -1,7 +1,5 @@
 #!bin/bash
 
-service mysql start
-
 chown -R www-data /var/www/*
 chmod -R 755 /var/www/*
 
@@ -25,18 +23,23 @@ echo "FLUSH PRIVILEGES" \
 
 path="/var/www/localhost"
 
+#PHPMYADMIN
 mkdir ${path}
-tar -xvf phpMyAdmin-5.0.4.tar.gz
-mv -f phpMyAdmin-5.0.4 ${path}/phpmyadmin
-mv /var/config.inc.php ${path}/phpmyadmin/
+wget https://files.phpmyadmin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-languages.tar.gz
+tar xvf phpMyAdmin-4.9.0.1-all-languages.tar.gz
+mv phpMyAdmin-4.9.0.1-all-languages var/www/localhost/phpmyadmin
+mv ./config.inc.php var/www/localhost/phpmyadmin
 
-tar -xvf wordpress-5.5.3.tar.gz
+#WORDPRESS
+wget https://wordpress.org/latest.tar.gz
+tar xvf latest.tar.gz
+mkdir ${path}/wordpress
+cp -a wordpress/. ${path}/wordpress
 mv -f wordpress/ ${path}
-mv /var/wp-config.php ${path}/wordpress
+mv ./wp-config.php ${path}/wordpress
 
-rm *.tar.gz
-
-service php7.3-fpm start
+#SERVICES
 service nginx start
-
-bash
+service mysql start
+service php7.3-fpm start
+sleep infinity

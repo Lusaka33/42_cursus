@@ -33,10 +33,8 @@ RUN apt-get update && apt-get install -y \
 #    - ajoute des fichiers à partir du répertoire spécifié de votre client Docker.
 
 COPY srcs/nginx.conf /etc/nginx/sites-available/localhost
-COPY srcs/config.inc.php /var
-COPY srcs/wp-config.php /var
-COPY srcs/phpMyAdmin-5.0.4.tar.gz ./
-COPY srcs/wordpress-5.5.3.tar.gz ./
+COPY srcs/config.inc.php ./
+COPY srcs/wp-config.php ./
 COPY srcs/init.sh ./
 
 # 5. EXPOSE
