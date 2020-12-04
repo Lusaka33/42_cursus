@@ -20,22 +20,22 @@ LABEL maintainer="adrossig@students.42.fr"
 #    - Combinez toujours RUN apt-get update et apt-get install dans la même instruction RUN pour éviter les problèmes de mise en cache.
 
 RUN apt-get update && apt-get install -y \
+	wget \
 	nginx \
-	mariadb-server \
-	php-fpm \
-	php-mysql \
-	php-cli \
-	php-mbstring \
 	openssl \
+	mariadb-server mariadb-client\
+	php7.3 php7.3-fpm php7.3-mysql php-common php7.3-cli php7.3-common php7.3-json php7.3-opcache php7.3-readline \
+	php-mbstring php-zip php-gd \
+	php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip \
 	vim
 
 # 4. COPY
 #    - ajoute des fichiers à partir du répertoire spécifié de votre client Docker.
 
-COPY srcs/nginx.conf /etc/nginx/sites-available/localhost
-COPY srcs/config.inc.php ./
-COPY srcs/wp-config.php ./
 COPY srcs/init.sh ./
+COPY srcs/wp-config.php ./
+COPY srcs/config.inc.php ./
+COPY srcs/nginx.conf ./
 
 # 5. EXPOSE
 #    - informe Docker que le conteneur écoute sur les ports du réseau spécifiés au moment de l'exécution.
