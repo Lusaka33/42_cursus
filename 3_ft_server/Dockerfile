@@ -19,15 +19,15 @@ LABEL maintainer="adrossig@students.42.fr"
 #    - backslash(\) peut être utilisé pour continuer une seule instruction RUN sur la ligne suivante.
 #    - Combinez toujours RUN apt-get update et apt-get install dans la même instruction RUN pour éviter les problèmes de mise en cache.
 
-RUN		apt-get update && apt-get install -y \
-	nginx \
-	mariadb-server \
-	php-fpm \
-	php-mysql \
-	php-cli \
-	php-mbstring \
-	openssl \
-	vim
+RUN    	apt-get update && apt-get install -y \
+    	nginx \
+    	mariadb-server \
+    	php-fpm \
+    	php-mysql \
+    	php-cli \
+    	php-mbstring \
+    	openssl \
+    	vim
 
 # 4. COPY
 #    - ajoute des fichiers à partir du répertoire spécifié de votre client Docker.
@@ -38,7 +38,6 @@ COPY    srcs/wp-config.php /var
 COPY    srcs/phpMyAdmin-4.9.0.1.tar.gz ./
 COPY    srcs/wordpress-5.4.1.tar.gz ./
 COPY    srcs/init.sh ./
-COPY    srcs/theme.tar.gz ./
 
 # 5. EXPOSE
 #    - informe Docker que le conteneur écoute sur les ports du réseau spécifiés au moment de l'exécution.
