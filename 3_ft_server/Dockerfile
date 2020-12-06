@@ -19,33 +19,36 @@ LABEL maintainer="adrossig@students.42.fr"
 #    - backslash(\) peut être utilisé pour continuer une seule instruction RUN sur la ligne suivante.
 #    - Combinez toujours RUN apt-get update et apt-get install dans la même instruction RUN pour éviter les problèmes de mise en cache.
 
-RUN apt-get update && apt-get install -y \
-	wget \
+RUN		apt-get update && apt-get install -y \
 	nginx \
+	mariadb-server \
+	php-fpm \
+	php-mysql \
+	php-cli \
+	php-mbstring \
 	openssl \
-	mariadb-server mariadb-client\
-	php7.3 php7.3-fpm php7.3-mysql php-common php7.3-cli php7.3-common php7.3-json php7.3-opcache php7.3-readline \
-	php-mbstring php-zip php-gd \
-	php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip \
 	vim
 
 # 4. COPY
 #    - ajoute des fichiers à partir du répertoire spécifié de votre client Docker.
 
-COPY srcs/init.sh ./
-COPY srcs/wp-config.php ./
-COPY srcs/config.inc.php ./
-COPY srcs/nginx.conf ./
+COPY    srcs/nginx.conf /etc/nginx/sites-available/localhost
+COPY    srcs/config.inc.php /var
+COPY    srcs/wp-config.php /var
+COPY    srcs/phpMyAdmin-4.9.0.1.tar.gz ./
+COPY    srcs/wordpress-5.4.1.tar.gz ./
+COPY    srcs/init.sh ./
+COPY    srcs/theme.tar.gz ./
 
 # 5. EXPOSE
 #    - informe Docker que le conteneur écoute sur les ports du réseau spécifiés au moment de l'exécution.
 #    - indépendamment des paramètres EXPOSE, vous pouvez les remplacer à l'exécution en utilisant le drapeau -p comme `docker run -p 80:80/tcp -p 80:80/udp ...`.
 
-EXPOSE 80 443
+EXPOSE  80 443
 
 # 6. CMD
 #    - définit la commande à exécuter lors de l'exécution de l'image.
 #    - n'exécute rien au moment de la construction, tandis que RUN exécute une commande et commet le résultat.
 #    - s'il y a plus d'un CMD dans un Dockerfile, seul le dernier sera effectif.
 
-CMD bash init.sh
+CMD		bash init.sh
