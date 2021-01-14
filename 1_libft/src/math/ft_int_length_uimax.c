@@ -6,15 +6,15 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 10:53:22 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/16 10:54:04 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:56:48 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_int_length_uimax(uintmax_t n)
+int	ft_int_length_uimax(uintmax_t n)
 {
-	int		i;
+	int	i;
 
 	if (n < 0)
 		n *= -1;

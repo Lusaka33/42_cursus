@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:31:17 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 17:59:22 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:14:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@
 ** Retourne le nombre total de caractères imprimés.
 */
 
-int		ft_print_adr(t_format format, va_list ap)
+int	ft_print_adr(t_format format, va_list ap)
 {
-	void			*adr;
-	char			*number;
-	int				ret;
+	void	*adr;
+	char	*number;
+	int		ret;
 
 	number = NULL;
 	ret = 0;
@@ -52,7 +52,7 @@ int		ft_print_adr(t_format format, va_list ap)
 ** Retourne le nombre total de caractères imprimés.
 */
 
-int		ft_print_adr_cp(void *adr, t_format format)
+int	ft_print_adr_cp(void *adr, t_format format)
 {
 	int		ret;
 	char	*number;

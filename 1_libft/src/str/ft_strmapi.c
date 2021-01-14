@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:40:06 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 12:10:03 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:27:33 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-
 	unsigned int	i;
 	char			*mapped;
 
 	if (!s || !f)
 		return (NULL);
-	if (!(mapped = ft_strnew(ft_strlen((char*)s))))
+	mapped = ft_strnew(ft_strlen((char *)s));
+	if (mapped == NULL)
 		return (NULL);
 	i = 0;
 	while (s[i])

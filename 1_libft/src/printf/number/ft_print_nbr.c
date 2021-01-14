@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:55:01 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 10:18:14 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:15:31 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 ** -1 en cas d'erreur.
 */
 
-int		ft_print_signed_dec(t_format format, va_list ap)
+int	ft_print_signed_dec(t_format format, va_list ap)
 {
 	signed int	nbr;
 	char		*number;
@@ -62,7 +62,7 @@ int		ft_print_signed_dec(t_format format, va_list ap)
 ** -1 en cas d'erreur.
 */
 
-int		ft_print_unsigned_dec(t_format format, va_list ap)
+int	ft_print_unsigned_dec(t_format format, va_list ap)
 {
 	unsigned int	nbr;
 	char			*number;
@@ -100,7 +100,7 @@ int		ft_print_unsigned_dec(t_format format, va_list ap)
 ** -1 en cas d'erreur.
 */
 
-int		ft_print_hex(t_format format, va_list ap)
+int	ft_print_hex(t_format format, va_list ap)
 {
 	unsigned long	nbr;
 	char			*number;
@@ -142,7 +142,8 @@ char	*ft_zeroes_cp(int cp, int size)
 {
 	char	*number;
 
-	if (!(number = (char *)malloc(sizeof(char) * (size + 1))))
+	number = (char *)malloc(sizeof(char) * (size + 1));
+	if (number == NULL)
 		return (NULL);
 	if (cp >= 0 && cp <= 2)
 	{

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 14:00:56 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:03:33 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:40:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@ static int	value(char c)
 		return ((int)c - 'A' + 10);
 }
 
-int			ft_todec(char *str, int base)
+int	ft_todec(char *str, int base)
 {
-	int lenght;
-	int power;
-	int num;
-	int i;
+	int	lenght;
+	int	power;
+	int	num;
+	int	i;
 
 	if (!str)
 		return (OK);

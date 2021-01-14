@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:39:02 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:09:52 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:25:57 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 ** avant concaténation auquel on ajoute celui de src.
 */
 
-size_t		ft_strlcat(char *dest, const char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	const char	*odst;
 	const char	*osrc;

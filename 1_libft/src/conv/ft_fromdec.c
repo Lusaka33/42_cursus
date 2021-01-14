@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 14:19:25 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:42 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:26:33 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 ** Retourne le résultat de la conversion en entier de type long long.
 */
 
-static char		value(int number)
+static char	value(int number)
 {
 	if (number >= 0 && number <= 9)
 		return (char)(number + '0');
@@ -29,7 +29,7 @@ static char		value(int number)
 		return (char)(number - 10 + 'A');
 }
 
-static void		strev(char *str)
+static void	strev(char *str)
 {
 	int		lenght;
 	int		i;
@@ -46,11 +46,11 @@ static void		strev(char *str)
 	}
 }
 
-char			*ft_fromdec(int number, int base)
+char	*ft_fromdec(int number, int base)
 {
 	int		index;
 	char	*result;
-	
+
 	index = 0;
 	while (number > 0)
 	{

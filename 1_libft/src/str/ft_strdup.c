@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:37:32 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:23:09 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:24:15 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,11 @@
 
 char	*ft_strdup(const char *str)
 {
-	char		*dest;
-	unsigned	i;
+	char			*dest;
+	unsigned int	i;
 
-	if (!(dest = (char*)malloc(sizeof(char) * ft_strlen((char*)str) + 1)))
+	dest = (char *)malloc(sizeof(char) * ft_strlen((char *)str) + 1);
+	if (dest == NULL)
 		return (NULL);
 	i = 0;
 	while (i < ft_strlen((char *)str))

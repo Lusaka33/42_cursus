@@ -6,13 +6,13 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:38:00 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:23:19 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:24:34 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_str.h"
 
-char		**ft_strfree(char **str)
+char	**ft_strfree(char **str)
 {
 	while (*str)
 	{

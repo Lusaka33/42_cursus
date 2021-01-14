@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:54:51 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:07:48 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:02:04 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,9 @@ void	*ft_calloc(size_t count, size_t size)
 		count = 1;
 		size = 1;
 	}
-	if (!(var = malloc(sizeof(char) * (count * size))))
+	var = malloc(sizeof(char) * (count * size));
+	if (var == NULL)
 		return (NULL);
 	ft_bzero((void*)var, count * size);
-	return ((void*)var);
+	return ((void *)var);
 }

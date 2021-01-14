@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:24:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:01:56 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:08:07 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 ** 0 si ce n'est pas le cas (FAUX).
 */
 
-int		ft_islower(int i)
+int	ft_islower(int i)
 {
 	if (i >= 'a' && i <= 'z')
 		return (1);

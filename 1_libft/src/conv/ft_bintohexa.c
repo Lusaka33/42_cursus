@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 12:46:52 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:28 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:23:54 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@
 ** Retourne le résultat de la conversion en entier de type int.
 */
 
-int		ft_bintohexa(int binary)
+int	ft_bintohexa(int binary)
 {
-	int hexadecimal;
-	int i;
+	int	hexadecimal;
+	int	i;
 
 	hexadecimal = 0;
 	i = 1;

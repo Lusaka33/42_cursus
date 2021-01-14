@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:30:12 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 10:27:20 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:13:17 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,19 @@
 ** une fois le formatage de précision effectué.
 */
 
-char			*ft_int_add_precision(char *nbr, int precision)
+char	*ft_int_add_precision(char *nbr, int precision)
 {
-	int			i;
-	int			j;
-	int			k;
-	int			len;
-	char		*precised_int;
+	int		i;
+	int		j;
+	int		k;
+	int		len;
+	char	*precised_int;
 
 	i = 0;
 	j = 0;
 	len = (int)ft_strlen(nbr);
-	if (!(precised_int = (char *)malloc(sizeof(char) * (precision + 2))))
+	precised_int = (char *)malloc(sizeof(char) * (precision + 2));
+	if (precised_int == NULL)
 		return (NULL);
 	if (nbr[i] == '-')
 	{

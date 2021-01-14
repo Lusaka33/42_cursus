@@ -6,13 +6,13 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 11:17:35 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:10:28 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:33:54 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_vector.h"
 
-int		ft_vector_insert(t_vector *vector, size_t i, void *item)
+int	ft_vector_insert(t_vector *vector, size_t i, void *item)
 {
 	if (!vector || !item)
 		return (KO);
@@ -27,7 +27,7 @@ int		ft_vector_insert(t_vector *vector, size_t i, void *item)
 	return (OK);
 }
 
-int		ft_vector_add(t_vector *vector, void *item)
+int	ft_vector_add(t_vector *vector, void *item)
 {
 	if (!vector || !item)
 		return (KO);
@@ -37,7 +37,7 @@ int		ft_vector_add(t_vector *vector, void *item)
 	return (OK);
 }
 
-int		ft_vector_set(t_vector *vector, size_t i, void *item)
+int	ft_vector_set(t_vector *vector, size_t i, void *item)
 {
 	if (!vector || !item || i >= vector->len)
 		return (KO);

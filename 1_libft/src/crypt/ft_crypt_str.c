@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 11:23:24 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:03:52 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:45:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ static int	entry(int min, int max, int nbr)
 	return (result);
 }
 
-void		ft_crypt_str(int decalage, char *tab)
+void	ft_crypt_str(int decalage, char *tab)
 {
-	int minimum;
-	int maximum;
-	int i;
-	int size;
+	int	minimum;
+	int	maximum;
+	int	i;
+	int	size;
 
 	minimum = 32;
 	maximum = 126;

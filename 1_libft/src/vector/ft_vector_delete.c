@@ -6,13 +6,13 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/15 11:15:52 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:10:25 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:33:46 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_vector.h"
 
-int		ft_vector_delete(t_vector *vector, size_t i)
+int	ft_vector_delete(t_vector *vector, size_t i)
 {
 	if (!vector || !vector->a || i >= vector->len)
 		return (KO);
@@ -26,9 +26,9 @@ int		ft_vector_delete(t_vector *vector, size_t i)
 	return (OK);
 }
 
-int		ft_vector_free(t_vector *vector)
+int	ft_vector_free(t_vector *vector)
 {
-	size_t i;
+	size_t	i;
 
 	if (!vector || !vector->a)
 		return (KO);

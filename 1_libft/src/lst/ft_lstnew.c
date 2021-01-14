@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:29:22 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:06:37 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:51:31 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,13 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *liste;
+	t_list	*list;
 
-	liste = NULL;
-	if (!(liste = malloc(sizeof(t_list))))
+	list = NULL;
+	list = malloc(sizeof(t_list));
+	if (list == NULL)
 		return (NULL);
-	liste->content = content;
-	liste->next = NULL;
-	return (liste);
+	list->content = content;
+	list->next = NULL;
+	return (list);
 }

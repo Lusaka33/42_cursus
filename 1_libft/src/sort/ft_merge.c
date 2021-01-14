@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/26 17:48:09 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/26 18:05:57 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:17:40 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	ft_merge(int *array, int *aux, int low, int mid, int high)
 {
-	size_t i;
-	int j;
-	int k;
+	size_t	i;
+	int		j;
+	int		k;
 
 	i = low;
 	j = mid + 1;

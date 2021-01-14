@@ -6,13 +6,13 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/10 12:45:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:04:55 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:46:21 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_dict.h"
 
-int		ft_gethash(char *string)
+int	ft_gethash(char *string)
 {
 	unsigned int	hash;
 	int				counter;

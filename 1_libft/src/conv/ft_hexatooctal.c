@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 15:02:55 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:49 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:27:58 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 
 long long	ft_hexatooctal(char *hex)
 {
-	int temp;
-	int result;
+	int	temp;
+	int	result;
 
 	if (!hex)
 		return (OK);

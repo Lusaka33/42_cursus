@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/23 11:28:16 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:03:26 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:40:39 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 
 long long	ft_octaltodec(int octal)
 {
-	int decimal;
-	int i;
+	int	decimal;
+	int	i;
 
 	decimal = 0;
 	i = 0;

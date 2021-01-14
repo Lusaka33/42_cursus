@@ -6,13 +6,13 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:57:23 by adrossig          #+#    #+#             */
-/*   Updated: 2020/06/15 11:11:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:54:51 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_fibonacci(int index)
+int	ft_fibonacci(int index)
 {
 	if (index < 0)
 		return (KO);

@@ -6,17 +6,20 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 17:30:07 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 17:49:11 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:59:06 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_lcm(int nbr1, int nbr2)
+int	ft_lcm(int nbr1, int nbr2)
 {
-	int min;
+	int	min;
 
-	min = (nbr1 > nbr2) ? nbr1 : nbr2;
+	if (nbr1 > nbr2)
+		min = nbr1;
+	else
+		min = nbr2;
 	while (1)
 	{
 		if (min % nbr1 == 0 && min % nbr2 == 0)

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:53:06 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:26 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:23:39 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@
 ** Retourne le résultat de la conversion en entier de type int.
 */
 
-int		ft_bintodec(int binary)
+int	ft_bintodec(int binary)
 {
-	int i;
-	int mult;
+	int	i;
+	int	mult;
 
 	i = 0;
 	mult = 1;

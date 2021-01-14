@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 10:48:38 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 14:53:45 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 11:58:51 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ void	free_and_return_null(char **s)
 ** =========
 */
 
-int		ft_strlen(char *s)
+int	ft_strlen(char *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (!s)
@@ -48,9 +48,9 @@ int		ft_strlen(char *s)
 ** =========
 */
 
-int		is_there_line(char *s)
+int	is_there_line(char *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*(s + i))
@@ -67,9 +67,9 @@ int		is_there_line(char *s)
 ** =========
 */
 
-int		find_char_index(char *s, char c, char d)
+int	find_char_index(char *s, char c, char d)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*(s + i))

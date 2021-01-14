@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 10:46:16 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:56 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:36:24 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,14 @@
 ** NULL si l’allocation échoue.
 */
 
-char			*ft_itoa_uimax(uintmax_t nb)
+char	*ft_itoa_uimax(uintmax_t nb)
 {
-	char			*ret;
-	int				len;
+	char	*ret;
+	int		len;
 
 	len = ft_int_length_uimax(nb);
-	if (!(ret = (char *)malloc(sizeof(char) * len + 1)))
+	ret = (char *)malloc(sizeof(char) * len + 1);
+	if (ret == NULL)
 		return (NULL);
 	ret[len] = '\0';
 	while (len-- > 0)

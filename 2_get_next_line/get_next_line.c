@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 10:49:47 by adrossig          #+#    #+#             */
-/*   Updated: 2020/09/13 14:58:07 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 11:57:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** =========
 */
 
-void			*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	void		*ptr2;
 	size_t		i;
@@ -51,7 +51,8 @@ static	char	*ft_substr(char *s, int start, int len)
 		return (NULL);
 	if (start >= ft_strlen(s))
 		len = 0;
-	if (!(sub = ft_calloc((len + 1), sizeof(char))))
+	sub = ft_calloc((len + 1), sizeof(char));
+	if (sub == NULL)
 		return (NULL);
 	i = 0;
 	while (i < len)
@@ -67,7 +68,7 @@ static	char	*ft_substr(char *s, int start, int len)
 ** =========
 */
 
-static char		*ft_strjoin(char *s1, char *s2)
+static char	*ft_strjoin(char *s1, char *s2)
 {
 	char		*new;
 	int			len;
@@ -76,7 +77,8 @@ static char		*ft_strjoin(char *s1, char *s2)
 
 	i = 0;
 	len = ft_strlen(s1) + ft_strlen(s2);
-	if (!(new = ft_calloc((len + 1), sizeof(char))))
+	new = ft_calloc((len + 1), sizeof(char));
+	if (new == NULL)
 		return (NULL);
 	j = 0;
 	while (s1[i] != '\0')
@@ -93,7 +95,7 @@ static char		*ft_strjoin(char *s1, char *s2)
 	return (new);
 }
 
-int				final_step(int fdb, char ***line, char **kpr)
+int	final_step(int fdb, char ***line, char **kpr)
 {
 	char	*tmp;
 
@@ -112,7 +114,7 @@ int				final_step(int fdb, char ***line, char **kpr)
 	return (-1);
 }
 
-int				get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	char		*buff;
 	char		*temp;
@@ -122,11 +124,13 @@ int				get_next_line(int fd, char **line)
 
 	if ((fd < 0) || (read(fd, NULL, 0) < 0) || (BUFFER_SIZE <= 0) || !line)
 		return (-1);
-	if (!(kpr[fd]) && (!(kpr[fd] = ft_calloc(sizeof(char), (BUFFER_SIZE + 1)))))
+	kpr[fd] = ft_calloc(sizeof(char), (BUFFER_SIZE + 1));
+	if (!(kpr[fd]) && kpr == NULL)
 		return (-1);
 	buff = (char*)ft_calloc(BUFFER_SIZE + 1, sizeof(char));
 	line_exist = is_there_line(*(kpr + fd));
-	while ((line_exist == 0) && (fdb = read(fd, buff, BUFFER_SIZE)) > 0)
+	fdb = read(fd, buff, BUFFER_SIZE);
+	while ((line_exist == 0) && fdb > 0)
 	{
 		*(buff + fdb) = '\0';
 		temp = ft_strjoin(*(kpr + fd), buff);

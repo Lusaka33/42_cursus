@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 15:12:50 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 11:58:27 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:24:19 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 ** Retourne le résultat de la conversion en entier de type long long.
 */
 
-long long		ft_dectobin(int decimal)
+long long	ft_dectobin(int decimal)
 {
 	long long	binary;
 	int			i;
@@ -36,7 +36,7 @@ long long		ft_dectobin(int decimal)
 	return (binary);
 }
 
-long long		ft_dectobin_recursive(int decimal)
+long long	ft_dectobin_recursive(int decimal)
 {
 	if (decimal == 0)
 		return (OK);

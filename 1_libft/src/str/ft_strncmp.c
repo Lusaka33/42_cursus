@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:40:34 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 11:50:06 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:28:18 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@
 ** si s1 est respectivement inférieure, égale ou supérieure à s2.
 */
 
-int		ft_strncmp(const char *str1, const char *str2, size_t i)
+int	ft_strncmp(const char *str1, const char *str2, size_t i)
 {
-	unsigned j;
+	unsigned int	j;
 
 	j = 0;
 	if (i == 0)

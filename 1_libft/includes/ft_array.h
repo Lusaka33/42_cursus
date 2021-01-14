@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 11:35:41 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 17:59:25 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 11:59:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 
 # include "libft.h"
 
-typedef struct	s_array
+typedef struct s_array
 {
 	int		*array;
 	int		size;

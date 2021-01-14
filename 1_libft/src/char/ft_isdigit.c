@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:23:37 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:01:51 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:08:33 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@
 ** 0 si ce n'est pas le cas (FAUX).
 */
 
-
-int		ft_isdigit(int i)
+int	ft_isdigit(int i)
 {
 	if (i >= 48 && i <= 57)
 		return (1);

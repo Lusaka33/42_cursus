@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:30:50 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:28:25 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:03:45 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
+	const unsigned char	*p;
+
 	if (n != 0)
 	{
-		const unsigned char *p;
-
 		p = str;
 		while (--n != 0)
 		{

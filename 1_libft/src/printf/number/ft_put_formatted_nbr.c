@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:55:07 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 17:59:44 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:15:45 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 ** -1 en cas d'erreur.
 */
 
-int		ft_put_formatted_nbr(t_format format, char *number)
+int	ft_put_formatted_nbr(t_format format, char *number)
 {
 	int		len;
 	int		p;

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:39:19 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:23:40 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:26:07 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@
 ** après copie.
 */
 
-size_t		ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	size_t tmp;
+	size_t	tmp;
 
 	tmp = 0;
 	if (!src)

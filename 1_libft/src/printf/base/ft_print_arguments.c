@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:29:40 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 09:29:43 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:10:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 
 int	ft_print_arguments(t_format format, va_list ap)
 {
-	int ret_arg_printed;
+	int	ret_arg_printed;
 
 	ret_arg_printed = 0;
 	if (format.specifier == 'c')

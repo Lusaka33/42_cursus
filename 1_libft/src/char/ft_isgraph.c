@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:23:56 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:01:54 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:19:44 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,9 @@
 ** 0 si ce n'est pas le cas (FAUX).
 */
 
-int		ft_isgraph(int i)
+int	ft_isgraph(int i)
 {
-	if ((i >= 32 && i <= 126) && !(i == ' ' || i == '\t' || i == '\n' ||
-	i == '\v' || i == '\f' || i == '\r'))
+	if ((i >= 32 && i <= 126) && !(ft_isspace(i)))
 		return (1);
 	return (OK);
 }

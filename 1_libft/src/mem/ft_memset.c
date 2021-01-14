@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:32:05 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:08:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:05:21 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@
 
 void	*ft_memset(void *str, int i, size_t n)
 {
-	size_t j;
+	size_t	j;
 
 	j = 0;
 	while (j < n)
 	{
-		*(((unsigned char*)str) + j) = (unsigned char)i;
+		*(((unsigned char *)str) + j) = (unsigned char)i;
 		j++;
 	}
 	return (str);

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:30:35 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 11:48:33 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:02:52 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 ** dans les n premiers caractères de src.
 */
 
-void		*ft_memccpy(void *str1, const void *str2, int c, size_t n)
+void	*ft_memccpy(void *str1, const void *str2, int c, size_t n)
 {
 	size_t			i;
 	unsigned char	*dest;
@@ -40,7 +40,7 @@ void		*ft_memccpy(void *str1, const void *str2, int c, size_t n)
 	{
 		*(dest + i) = *(src + i);
 		if (*(dest + i) == (unsigned char)c)
-			return ((unsigned char*)(dest + (i + 1)));
+			return ((unsigned char *)(dest + (i + 1)));
 		i++;
 	}
 	return (NULL);

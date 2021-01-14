@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:44:36 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:12 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:08:20 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 ** si la conversion n'était pas possible.
 */
 
-int		ft_toupper(int i)
+int	ft_toupper(int i)
 {
 	if (i >= 'a' && i <= 'z')
 		return (i - 32);

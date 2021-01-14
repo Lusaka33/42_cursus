@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:22:48 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:01:37 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:07:53 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 ** 0 si ce n'est pas le cas (FAUX).
 */
 
-int		ft_isascii(int i)
+int	ft_isascii(int i)
 {
 	if (i >= 0 && i <= 127)
 		return (1);

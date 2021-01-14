@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:55:28 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/16 11:14:36 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:17:03 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 ** sans compter l'octer nul final.
 */
 
-int		ft_printf(const char *str, ...)
+int	ft_printf(const char *str, ...)
 {
 	t_position	position;
 	t_format	format;
@@ -60,7 +60,7 @@ int		ft_printf(const char *str, ...)
 ** sans compter l'octer nul final.
 */
 
-int		ft_dprintf(int fd, const char *str, ...)
+int	ft_dprintf(int fd, const char *str, ...)
 {
 	t_position	position;
 	int			ret_printed;

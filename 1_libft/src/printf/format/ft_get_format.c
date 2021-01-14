@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:30:49 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 10:17:06 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:14:08 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,9 +143,9 @@ t_format	ft_p(const char *s, size_t *p_pos, va_list ap, t_format form)
 ** '0' s'il n'y a pas de precision.
 */
 
-char		ft_s(const char *str, size_t *ptr_pos)
+char	ft_s(const char *str, size_t *ptr_pos)
 {
-	char specifier;
+	char	specifier;
 
 	specifier = '0';
 	if (str[*ptr_pos] == 's')

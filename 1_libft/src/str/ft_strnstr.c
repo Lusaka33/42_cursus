@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:43:05 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 11:51:30 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:29:17 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
-	unsigned i;
-	unsigned j;
+	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
 	if (*needle == '\0')

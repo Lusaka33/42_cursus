@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:41:03 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:24:08 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:28:04 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ char	*ft_strndup(const char *s, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (!(s2 = (char*)malloc(sizeof(char) * (n + 1))))
+	s2 = (char *)malloc(sizeof(char) * (n + 1));
+	if (s2 == NULL)
 		return (NULL);
 	while (*(s + i) && i < n)
 	{

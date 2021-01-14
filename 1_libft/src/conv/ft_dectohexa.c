@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 14:05:27 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:37 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:42:01 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,10 @@ char	*ft_dectohexa(int decimal)
 	while (decimal > 0 && i >= 0)
 	{
 		remainder = decimal % 16;
-		*(hexadecimal + i) = remainder < 10 ?
-		(char)remainder + 48 : (char)remainder + 55;
+		if (remainder < 10)
+			*(hexadecimal + i) = (char)remainder + 48;
+		else
+			*(hexadecimal + i) = (char)remainder + 55;
 		decimal /= 16;
 		i++;
 	}

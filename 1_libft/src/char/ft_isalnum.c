@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:22:11 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:01:33 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:07:47 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 ** 0 si ce n'est pas le cas (FAUX).
 */
 
-int		ft_isalnum(int i)
+int	ft_isalnum(int i)
 {
 	if (ft_isdigit(i) || ft_isalpha(i))
 		return (1);

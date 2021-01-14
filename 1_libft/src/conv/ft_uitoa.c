@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 16:13:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:03:38 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:41:54 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 ** NULL si l’allocation échoue.
 */
 
-char				*ft_uitoa(unsigned int n)
+char	*ft_uitoa(unsigned int n)
 {
 	unsigned long	tmp;
 	char			*str;

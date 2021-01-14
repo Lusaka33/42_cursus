@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 15:53:10 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:30 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:24:03 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 ** Retourne le résultat de la conversion en entier de type int.
 */
 
-int		ft_bintooctal(int binary)
+int	ft_bintooctal(int binary)
 {
-	int octal;
-	int decimal;
-	int i;
+	int	octal;
+	int	decimal;
+	int	i;
 
 	octal = 0;
 	decimal = 0;

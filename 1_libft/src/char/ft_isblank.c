@@ -21,7 +21,7 @@
 ** 0 si ce n'est pas le cas (FAUX).
 */
 
-int		ft_isblank(int i)
+int	ft_isblank(int i)
 {
 	if (i == ' ' || i == '\t')
 		return (1);

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:53:49 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:09:16 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:17:24 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_bubblesort(int *a, int b)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	while (i < b - 1)

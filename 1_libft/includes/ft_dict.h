@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/10 16:50:14 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:04:32 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:00:08 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 # include "libft.h"
 
-typedef struct	s_dictionary
+typedef struct s_dictionary
 {
 	void	*elements[MAXELEMENTS];
 	int		nbr;

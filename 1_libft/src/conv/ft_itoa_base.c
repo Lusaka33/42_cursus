@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 10:45:44 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:54 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:40:26 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,43 +24,30 @@
 ** NULL si l’allocation échoue.
 */
 
-int		value_len(uintmax_t nb, int base)
+char	*ft_itoa_base_custom(u_int64_t nbr, uintmax_t base)
 {
-	int		len;
+	static char	hex[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+						'A', 'B', 'C', 'D', 'E', 'F'};
+	char		*str;
+	uintmax_t	converted_nbr[64];
+	uintmax_t	n;
+	int64_t		i;
 
-	len = 0;
-	while (nb != 0)
+	if (nbr == 0)
+		return (ft_strdup("0"));
+	i = 0;
+	n = (uintmax_t)nbr;
+	while (n > 0)
 	{
-		nb /= base;
-		len++;
+		converted_nbr[i++] = n % (uintmax_t)base;
+		n /= (uintmax_t)base;
 	}
-	return (len);
-}
-
-char	*ft_itoa_base(intmax_t value, int base)
-{
-	int					len;
-	uintmax_t			nb;
-	char				*ret;
-	char				*arr;
-
-	nb = (value < 0 && base == 10) ? -value : (uintmax_t)value;
-	len = (value == 0 || (value < 0 && base == 10)) ? 1 : 0;
-	len += value_len(nb, base);
-	if (!(ret = (char*)malloc(sizeof(char) * (len + 1))))
+	str = (char *)malloc(sizeof(char *) * (uintmax_t)i);
+	if (str == NULL)
 		return (NULL);
-	arr = ft_strdup("0123456789abcdef");
-	if (value < 0 && base == 10)
-		ret[0] = '-';
-	if (value == 0)
-		ret[0] = '0';
-	ret[len] = '\0';
-	nb = (value < 0 && base == 10) ? -value : (uintmax_t)value;
-	while (nb != 0)
-	{
-		ret[--len] = arr[nb % base];
-		nb /= base;
-	}
-	free(arr);
-	return (ret);
+	str[i] = '\0';
+	i--;
+	while (i >= 0)
+		str[n++] = hex[converted_nbr[i--]];
+	return (str);
 }

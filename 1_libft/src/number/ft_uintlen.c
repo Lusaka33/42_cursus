@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 12:43:25 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:08:36 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:06:34 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ size_t	ft_uintlen(unsigned int n)
 	int	i;
 
 	i = 1;
-	while (n /= 10)
+	n /= 10;
+	while (n)
 		i++;
 	return (i);
 }

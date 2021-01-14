@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 14:46:11 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:35 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:25:59 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@
 ** Retourne le résultat de la conversion en entier de type int.
 */
 
-int		ft_dectooctal(int decimal)
+int	ft_dectooctal(int decimal)
 {
-	int octal;
-	int i;
+	int	octal;
+	int	i;
 
 	octal = 0;
 	i = 1;

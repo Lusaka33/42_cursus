@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:31:08 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 09:31:10 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:14:28 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,8 @@ char	*ft_int_add_width(t_format format, char *nbr)
 
 char	*ft_int_cp(int precision, int width, int len, char *nbr)
 {
-	char *with_width_cp;
-	char *to_add_cp;
+	char	*with_width_cp;
+	char	*to_add_cp;
 
 	if (precision < 0 && width > len)
 	{

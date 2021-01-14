@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:27:12 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:06:05 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:48:42 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_list *tmp;
+	t_list	*tmp;
 
 	if (!lst || !*lst || !del)
 		return ;

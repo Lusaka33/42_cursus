@@ -6,15 +6,15 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 17:42:36 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 17:59:36 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:06:54 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_array.h"
 
-int		ft_array_putstr(t_array *array)
+int	ft_array_putstr(t_array *array)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < array->size)

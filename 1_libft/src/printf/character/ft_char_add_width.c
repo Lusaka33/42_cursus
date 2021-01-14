@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:30:05 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/09 09:30:07 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:12:23 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ char	*ft_add_front_to_char(char c, char *str)
 	i = 0;
 	j = 0;
 	len = ft_strlen(str);
-	if (!(new_str = (char *)malloc(sizeof(char) * (len + 2))))
+	new_str = (char *)malloc(sizeof(char) * (len + 2));
+	if (new_str == NULL)
 		return (NULL);
 	new_str[i] = c;
 	i++;
@@ -67,7 +68,8 @@ char	*ft_add_back_to_char(char c, char *str)
 
 	i = 0;
 	len = ft_strlen(str);
-	if (!(new_str = (char *)malloc(sizeof(char) * (len + 2))))
+	new_str = (char *)malloc(sizeof(char) * (len + 2));
+	if (new_str == NULL)
 		return (NULL);
 	while (str[i] != '\0')
 	{

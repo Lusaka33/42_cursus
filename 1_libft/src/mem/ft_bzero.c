@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:54:07 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 16:32:35 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:00:35 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char *temp;
+	char	*temp;
 
 	temp = s;
 	while (n--)

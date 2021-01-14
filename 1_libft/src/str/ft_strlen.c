@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:39:34 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 16:15:16 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:26:22 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 ** Retourne le nombre de caractères dans s.
 */
 
-size_t		ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-	const char *dest;
+	const char	*dest;
 
 	dest = str;
 	while (*dest)

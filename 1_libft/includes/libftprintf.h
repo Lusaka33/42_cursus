@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 11:22:53 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 18:20:36 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:04:25 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@
 **STRUCTURE
 */
 
-typedef struct	s_format
+typedef struct s_format
 {
 	int		fd;
 	int		flag;
@@ -79,7 +79,7 @@ typedef struct	s_format
 	char	specifier;
 }				t_format;
 
-typedef struct	s_position
+typedef struct s_position
 {
 	size_t	index;
 	size_t	pos;

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 11:29:29 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:03:35 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:41:46 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ char	*ft_tohexa(char *base, unsigned long nbr, unsigned long lenght)
 	divisor = 1;
 	if (!base)
 		return (NULL);
-	if (!(locma = malloc(sizeof(char) * 33)))
+	locma = malloc(sizeof(char) * 33);
+	if (locma == NULL)
 		return (NULL);
 	while ((nbr / divisor) >= lenght)
 		divisor *= lenght;

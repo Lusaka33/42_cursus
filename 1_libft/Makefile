@@ -37,14 +37,14 @@ CHAR := ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isblank.c ft_iscntrl.c \
 CONV := ft_atoi.c ft_itoa.c ft_bintodec.c ft_bintohexa.c ft_bintooctal.c \
 		ft_dectobin.c ft_dectohexa.c ft_dectooctal.c ft_hexatooctal.c \
 		ft_octaltobin.c ft_octaltodec.c ft_tohexa.c ft_itoa_base.c \
-		ft_itoa_uimax.c ft_ftoa.c ft_uitoa.c ft_hexitoa.c ft_todec.c
+		ft_itoa_uimax.c ft_uitoa.c ft_hexitoa.c ft_todec.c
 
 CRYPT := ft_crypt_str.c ft_uncrypt_str.c
 
 DICT := ft_add_item_label.c ft_destroy.c ft_get_element_index.c \
 		ft_get_element_label.c ft_gethash.c ft_init_dict.c
 
-FILE :=	ft_open_files.c ft_read_files.c ft_files_input.c
+FILE :=	ft_open_files.c ft_read_files.c
 
 LST :=  ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 		ft_lstadd_back.c ft_lstdelone.c ft_lstlast.c \

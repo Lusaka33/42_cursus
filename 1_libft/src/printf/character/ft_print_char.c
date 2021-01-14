@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:30:20 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:29:01 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:13:34 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 ** suite au formatage.
 */
 
-int		ft_put_formatted_char(t_format format, char c)
+int	ft_put_formatted_char(t_format format, char c)
 {
 	int		nbr_space;
 	char	*printed;
@@ -58,7 +58,7 @@ int		ft_put_formatted_char(t_format format, char c)
 ** Retourne le nombre total de caractères imprimés.
 */
 
-int		ft_print_c(t_format format, va_list ap)
+int	ft_print_c(t_format format, va_list ap)
 {
 	char	c;
 	int		with_format;
@@ -93,7 +93,7 @@ int		ft_print_c(t_format format, va_list ap)
 ** -1 en cas d'errreur.
 */
 
-int		ft_print_per(t_format format)
+int	ft_print_per(t_format format)
 {
 	char	c;
 	int		with_format;

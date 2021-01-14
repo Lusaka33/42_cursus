@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:31:09 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:29:17 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:05:08 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@
 ** si s1 est respectivement inférieure, égale ou supérieur à s2.
 */
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
+	const unsigned char	*p1;
+	const unsigned char	*p2;
+
 	if (n != 0)
 	{
-		const unsigned char *p1;
-		const unsigned char *p2;
-		
 		p1 = s1;
 		p2 = s2;
 		while (--n != 0)

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:33:47 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:09:00 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:07:06 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long nbr;
+	long	nbr;
 
 	nbr = n;
 	if (nbr < 0)

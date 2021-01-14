@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:25:05 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:05 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:17:09 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@
 ** 0 si ce n'est pas le cas (FAUX).
 */
 
-int		ft_isspace(int i)
+int	ft_isspace(int i)
 {
 	if (i == ' ' || i == '\t' || i == '\n' || i == '\v'
-	|| i == '\f' || i == '\r')
+		|| i == '\f' || i == '\r')
 		return (1);
 	return (OK);
 }

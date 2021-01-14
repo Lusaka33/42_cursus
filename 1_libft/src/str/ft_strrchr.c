@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:43:19 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:55:51 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:30:14 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,15 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	const char *found;
-	const char *p;
-	
+	const char	*found;
+	const char	*p;
+
 	c = (unsigned char) c;
 	if (c == '\0')
 		return (ft_strchr(str, '\0'));
 	found = NULL;
-	while ((p = ft_strchr(str, c)) != NULL)
+	p = ft_strchr(str, c);
+	while (p != NULL)
 	{
 		found = p;
 		str = p + 1;

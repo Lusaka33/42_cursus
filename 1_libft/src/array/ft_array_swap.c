@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 11:49:21 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 17:59:41 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:07:09 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_array_swap(t_array *array, int position1, int position2)
 {
-	int temp;
+	int	temp;
 
 	temp = array->array[position1];
 	array->array[position1] = array->array[position2];

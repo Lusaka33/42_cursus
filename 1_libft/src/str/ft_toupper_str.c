@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 11:02:40 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:25:11 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:31:52 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
 ** si la conversion n'était pas possible.
 */
 
-char		*ft_toupper_str(char *str, int len)
+char	*ft_toupper_str(char *str, int len)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (i < len)

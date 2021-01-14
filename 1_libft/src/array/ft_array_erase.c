@@ -6,15 +6,15 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 11:46:55 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 17:59:02 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:06:47 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_array.h"
 
-int		ft_array_erase(t_array *array)
+int	ft_array_erase(t_array *array)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < array->size)

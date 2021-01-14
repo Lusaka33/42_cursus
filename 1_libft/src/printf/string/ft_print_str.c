@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 12:16:27 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 17:58:17 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:16:41 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 ** Retourne le nombre de caractères imprimés.
 */
 
-int		ft_print_str(t_format format, va_list ap)
+int	ft_print_str(t_format format, va_list ap)
 {
 	char	*str;
 	int		nbr_space;
@@ -55,10 +55,10 @@ int		ft_print_str(t_format format, va_list ap)
 ** Retourne le nombre de caractères à ajouter lors du formatage.
 */
 
-int		ft_format_trans(int *ptr_precision, int *ptr_width, char *str)
+int	ft_format_trans(int *ptr_precision, int *ptr_width, char *str)
 {
-	int nbr_space;
-	int len;
+	int	nbr_space;
+	int	len;
 
 	nbr_space = 0;
 	len = ft_strlen(str);
@@ -83,7 +83,7 @@ int		ft_format_trans(int *ptr_precision, int *ptr_width, char *str)
 
 char	*ft_to_add(int flag, int nbr_space)
 {
-	char *to_add;
+	char	*to_add;
 
 	if (flag == 1)
 		to_add = ft_calloc_flag(nbr_space, 48);
@@ -105,7 +105,7 @@ char	*ft_to_add(int flag, int nbr_space)
 
 char	*ft_printed(int flag, char *new_buffer, char *to_add)
 {
-	char *printed;
+	char	*printed;
 
 	if (flag == 2)
 		printed = ft_join(new_buffer, to_add);

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:38:49 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:23:36 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:25:45 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,18 @@
 ** ou NULL si l'allocation dynamique de mémoire échoue.
 */
 
-char			*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	i;
 	size_t	j;
-	size_t	len;
 	char	*str;
 
 	i = 0;
 	j = 0;
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	len = ft_strlen(s1) + ft_strlen(s2);
-	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
+	str = (char *)malloc(sizeof(char) * ((ft_strlen(s1) + ft_strlen(s2)) + 1));
+	if (str == NULL)
 		return (NULL);
 	while (s1[i] != '\0')
 	{

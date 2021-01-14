@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:23:23 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:01:48 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:07:58 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 ** 0 si ce n'est pas le cas (FAUX).
 */
 
-int		ft_iscntrl(int i)
+int	ft_iscntrl(int i)
 {
 	if ((i >= 0 && i <= 31) || i == 127)
 		return (1);

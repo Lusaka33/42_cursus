@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/10 12:01:21 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 10:24:23 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:28:54 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char	*ft_strnjoin(char *s1, char *s2, int n)
 
 	i = -1;
 	j = 0;
-	if (!s1 || !(str = malloc(sizeof(char) * ft_strlen(s1) + n + 1)))
+	str = malloc(sizeof(char) * ft_strlen(s1) + n + 1);
+	if (!s1 || str == NULL)
 	{
 		free(s1);
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:25:38 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:02:59 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 12:32:18 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,29 +23,43 @@
 ** NULL si l’allocation échoue.
 */
 
-char				*ft_itoa(int n)
+static size_t	count_n_len(int n)
 {
-	long			tmp;
-	char			*str;
-	size_t			len;
+	size_t	i;
 
-	tmp = (long)n;
-	str = NULL;
-	len = ft_intlen(tmp) + (n < 0 ? 1 : 0);
-	if (n < 0)
-		tmp = (tmp * -1);
-	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (str != NULL)
+	i = 0;
+	while (n)
 	{
-		str[len] = '\0';
-		while (len > 0)
-		{
-			str[len - 1] = (tmp % 10) + '0';
-			len--;
-			tmp = tmp / 10;
-		}
-		if (n < 0)
-			str[0] = '-';
+		n /= 10;
+		i++;
 	}
-	return (str);
+	return (i);
+}
+
+static void 	do_conv(char *buffer, long n, size_t i)
+{
+	if (n > 0)
+	{
+		do_conv(buffer, n / 10, --i);
+		buffer[i] = n % 10 + '0';
+	}
+}
+
+char	*ft_itoa(int n)
+{
+	char	s[12];
+	size_t	len;
+
+	ft_bzero(s, 12);
+	len = count_n_len(n);
+	if (n == 0)
+		return (ft_strdup("0"));
+	if (n < 0)
+	{
+		s[0] = '-';
+		do_conv(s + 1, - (long)n, len);
+	}
+	else
+		do_conv(s + 0, (long)n, len);
+	return (ft_strdup(s));
 }

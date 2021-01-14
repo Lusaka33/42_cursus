@@ -6,7 +6,7 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 12:15:15 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:27:20 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/14 14:08:10 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 ** Retourne le nombre de caractère imprimés.
 */
 
-int		ft_get_string(const char *str, size_t *ptr_pos)
+int	ft_get_string(const char *str, size_t *ptr_pos)
 {
 	size_t		j;
 	size_t		k;
@@ -37,7 +37,8 @@ int		ft_get_string(const char *str, size_t *ptr_pos)
 		k++;
 	}
 	*ptr_pos += 1;
-	if (!(line = malloc(sizeof(char) * (k + 1))))
+	line = malloc(sizeof(char) * (k + 1));
+	if (line == NULL)
 		return (KO);
 	k = 0;
 	while (str[j] != '%')
