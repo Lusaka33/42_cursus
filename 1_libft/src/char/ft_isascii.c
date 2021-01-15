@@ -6,20 +6,20 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:22:48 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:07:53 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/15 10:07:44 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_char.h"
 
 /*
-** Vérifie si le caractère c est un unsigned char sur 7 bits,
-** entrant dans le jeu de caractère de la table ASCII.
+** Checks if the c character is a 7-bit unsigned char,
+** entering the character set of the ASCII table.
 ** =========
-** #1 : le carctère à analyser.
+** #1: the character to be analysed.
 ** =========
-** Retourne 1 si c'est le cas (VRAI),
-** 0 si ce n'est pas le cas (FAUX).
+** Return 1 if this is the case (TRUE),
+** 0 if not (FALSE).
 */
 
 int	ft_isascii(int i)

@@ -6,19 +6,19 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:44:36 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:08:20 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/15 10:10:21 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_char.h"
 
 /*
-** Convertit la lettre c en MAJ, si possible.
+** Converts the letter c into UPPERCASE, if possible.
 ** =========
-** #1 : le carctère à convertir.
+** #1: the character to be converted.
 ** =========
-** Retourne la lettre convertie, ou celle de départ
-** si la conversion n'était pas possible.
+** Returns the converted letter, or the original one.
+** if conversion was not possible.
 */
 
 int	ft_toupper(int i)

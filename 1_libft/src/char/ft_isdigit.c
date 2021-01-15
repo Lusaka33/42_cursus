@@ -6,19 +6,19 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:23:37 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:08:33 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/15 10:08:36 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_char.h"
 
 /*
-** Vérifie si le caractère c est numérique.
+** Check if the character c is numeric.
 ** =========
-** #1 : le carctère à analyser.
+** #1: the character to be analysed.
 ** =========
-** Retourne 1 si c'est le cas (VRAI),
-** 0 si ce n'est pas le cas (FAUX).
+** Return 1 if this is the case (TRUE),
+** 0 if not (FALSE).
 */
 
 int	ft_isdigit(int i)

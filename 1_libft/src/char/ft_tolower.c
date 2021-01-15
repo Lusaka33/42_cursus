@@ -6,19 +6,19 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:44:21 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:08:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/15 10:10:06 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_char.h"
 
 /*
-** Convertit la lettre c en MIN, si possible.
+** Converts the letter c into MIN, if possible.
 ** =========
-** #1 : le carctère à convertir.
+** #1: the character to be converted.
 ** =========
-** Retourne la lettre convertie, ou celle de départ
-** si la conversion n'était pas possible.
+** Returns the converted letter, or the original one.
+** if conversion was not possible.
 */
 
 int	ft_tolower(int i)
