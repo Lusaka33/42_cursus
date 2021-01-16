@@ -6,18 +6,18 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 16:02:41 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/28 18:03:21 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:34:23 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti un nombre octal en nombre binaire.
+** Converts an octal number to a binary number.
 ** =======
-** #1: octal de type int.
+** #1: Octal type int.
 ** =======
-** Retourne le résultat de la conversion en entier de type long long.
+** Returns the result of the conversion as an integer long type.
 */
 
 long long	ft_octaltobin(int octal)

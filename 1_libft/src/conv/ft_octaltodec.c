@@ -6,18 +6,18 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/23 11:28:16 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:40:39 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:35:18 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti un nombre octal en nombre decimal.
+** Converts an octal number to a decimal number.
 ** =======
-** #1: octal de type int.
+** #1: Octal of type int.
 ** =======
-** Retourne le résultat de la conversion en entier de type long long.
+** Returns the result of the conversion as an integer long type.
 */
 
 long long	ft_octaltodec(int octal)

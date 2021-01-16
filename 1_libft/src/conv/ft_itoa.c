@@ -6,21 +6,21 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:25:38 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:32:18 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:33:49 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Alloue (avec malloc(3)) et retourne une chaine de
-** caractères représentant un integer n reçu en argument.
-** Les nombres négatifs doivent être gérés.
+** Allocates (with malloc(3)) and returns a chain of
+** characters representing an integer n received as argument.
+** Negative numbers must be handled.
 ** =======
-** #1 : l'integer à convertir.
+** #1 : the integer to convert.
 ** =======
-** Retourne la chaine de caractères représentant l’integer,
-** NULL si l’allocation échoue.
+** Returns the string representing the integer,
+** NULL if the allocation fails.
 */
 
 static size_t	count_n_len(int n)

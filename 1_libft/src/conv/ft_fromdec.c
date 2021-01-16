@@ -6,19 +6,19 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 14:19:25 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:26:33 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:31:47 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti un nombre decimal un un autre type (ex: binaire, octal ou hexa).
+** Converts a decimal number to another type (e.g. binary, octal or hexadecimal).
 ** =======
-** #1: le nombre a convertire.
-** #2: la base de convertions (ex: base 10).
+** #1: the number to be converted.
+** #2: the basis of conversions (ex: base 10).
 ** =======
-** Retourne le résultat de la conversion en entier de type long long.
+** Returns the result of the conversion as an integer long type.
 */
 
 static char	value(int number)

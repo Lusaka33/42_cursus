@@ -6,18 +6,18 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:53:06 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:23:39 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:29:18 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti un binaire en nombre decimal.
+** Converts a binary into a decimal number.
 ** =======
-** #1: Binaire de type int.
+** #1: Binary of type int
 ** =======
-** Retourne le résultat de la conversion en entier de type int.
+** Returns the result of the conversion as an integer of type int.
 */
 
 int	ft_bintodec(int binary)

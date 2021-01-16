@@ -6,22 +6,22 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/16 10:45:44 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:40:26 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:33:58 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Alloue (avec malloc(3)) et retourne une chaine de
-** caractères représentant un integer n reçu en argument.
-** Les nombres négatifs doivent être gérés.
+** Allocates (with malloc(3)) and returns a chain of
+** characters representing an integer n received as argument.
+** Negative numbers must be handled.
 ** =======
-** #1: l'integer à convertir.
-** #2: la base de convertion.
+** #1: the integer to be converted.
+** #2: the basis for conversion.
 ** =======
-** Retourne la chaine de caractères représentant l’integer,
-** NULL si l’allocation échoue.
+** Returns the character string representing the integer,
+** NULL if the allocation fails.
 */
 
 char	*ft_itoa_base_custom(u_int64_t nbr, uintmax_t base)

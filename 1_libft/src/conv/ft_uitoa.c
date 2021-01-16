@@ -6,20 +6,20 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 16:13:53 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:41:54 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:35:45 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Alloue (avec malloc(3)) et retourne une chaine de
-** caractères représentant un unsigned integer n reçu en argument.
+** Allocates (with malloc(3)) and returns a chain of
+** characters representing an unsigned integer n received as argument.
 ** =======
-** #1 : l'integer à convertir.
+** #1 : the integer to convert.
 ** =======
-** Retourne la chaine de caractères représentant n,
-** NULL si l’allocation échoue.
+** Returns the string representing n,
+** NULL if the allocation fails.
 */
 
 char	*ft_uitoa(unsigned int n)

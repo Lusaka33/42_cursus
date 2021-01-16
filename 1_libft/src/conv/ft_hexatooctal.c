@@ -6,18 +6,18 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 15:02:55 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:27:58 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:32:15 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti un hexadecimal en nombre octal.
+** Converts a hexadecimal to an octal number.
 ** =======
-** #1: Decimal de type char.
+** #1: Decimal type char.
 ** =======
-** Retourne le résultat de la conversion en entier de type long long.
+** Returns the result of the conversion as an integer long type.
 */
 
 long long	ft_hexatooctal(char *hex)

@@ -6,21 +6,21 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/15 18:10:54 by adrossig          #+#    #+#             */
-/*   Updated: 2020/10/15 18:11:10 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:34:02 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Alloue (avec malloc(3)) et retourne une chaine de
-** caractères représentant un unsigned integer n reçu en argument.
+** Allocates (with malloc(3)) and returns a chain of
+** characters representing an unsigned integer n received as argument.
 ** =======
-** #1 : l'integer à convertir.
-** #2 : le specifier indiquant si la base est en MAJ ou MIN.
+** #1: the integer to be converted.
+** #2: the specifier indicating whether the base is in SHIFT or MIN.
 ** =======
-** Retourne la chaine de caractères représentant l’integer,
-** NULL si l’allocation échoue.
+** Returns the character string representing the integer,
+** NULL if the allocation fails.
 */
 
 char	*ft_hexitoa(unsigned int n, char c)
@@ -52,14 +52,14 @@ char	*ft_hexitoa(unsigned int n, char c)
 }
 
 /*
-** Alloue (avec malloc(3)) et retourne une chaine de
-** caractères représentant un unsigned long n reçu en argument.
+** Allocates (with malloc(3)) and returns a chain of
+** characters representing an unsigned long n received as an argument.
 ** =======
-** #1 : l'integer à convertir.
-** #2 : le specifier indiquant si la base est en MAJ ou MIN.
+** #1: the integer to be converted.
+** #2: the specifier indicating whether the base is in SHIFT or MIN.
 ** =======
-** Retourne la chaine de caractères représentant l’integer,
-** NULL si l’allocation échoue.
+** Returns the character string representing the integer,
+** NULL if the allocation fails.
 */
 
 char	*ft_long_hexitoa(unsigned long n, char c)

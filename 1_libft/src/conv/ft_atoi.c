@@ -6,18 +6,18 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:52:40 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:23:20 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:28:19 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti le début de la chaîne pointée en entier.
+** Converts the beginning of the pointed chain into its entirety.
 ** =======
-** #1: un pointeur vers une chaîne de caractères.
+** #1: A pointer to a string of characters.
 ** =======
-** Retourne le résultat de la conversion en entier de type int.
+** Returns the result of the conversion as an integer of type int.
 */
 
 int	ft_atoi(const char *str)

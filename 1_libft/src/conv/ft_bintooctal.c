@@ -6,18 +6,18 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 15:53:10 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:24:03 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:29:39 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti un binaire en nombre octal.
+** Converts a binary into an octal number.
 ** =======
-** #1: Binaire de type int.
+** #1: Binary of type int
 ** =======
-** Retourne le résultat de la conversion en entier de type int.
+** Returns the result of the conversion as an integer of type int.
 */
 
 int	ft_bintooctal(int binary)

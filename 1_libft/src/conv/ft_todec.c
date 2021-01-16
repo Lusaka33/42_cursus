@@ -6,19 +6,19 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 14:00:56 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:40:53 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:35:26 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti un nombre de n'importe quel type en nombre decimal.
+** Converts a number of any type into a decimal number.
 ** =======
-** #1: le nombre a convertir.
-** #2: la base de convertions (ex: base 10).
+** #1: the number to be converted.
+** #2: the basis of conversion (ex: base 10).
 ** =======
-** Retourne le résultat de la conversion en entier de type long long.
+** Returns the result of the conversion as an integer long type.
 */
 
 static int	value(char c)

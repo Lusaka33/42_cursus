@@ -6,20 +6,20 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 11:29:29 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 12:41:46 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:35:34 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti un nombre de n'importe quel type en nombre hexadecimal.
+** Converts a number of any type into a hexadecimal number.
 ** =======
-** #1: la base de convertions (ex: base 10).
-** #2: le nombre a convertir.
-** #3: la longueur.
+** #1: the conversion base (ex: base 10).
+** #2: the number to convert.
+** #3: the length.
 ** =======
-** Retourne le résultat de la conversion en entier de type long long.
+** Returns the result of the conversion as an integer long type.
 */
 
 char	*ft_tohexa(char *base, unsigned long nbr, unsigned long lenght)

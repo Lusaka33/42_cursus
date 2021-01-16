@@ -6,18 +6,18 @@
 /*   By: adrossig <adrossig@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 14:05:27 by adrossig          #+#    #+#             */
-/*   Updated: 2021/01/14 14:42:01 by adrossig         ###   ########.fr       */
+/*   Updated: 2021/01/16 12:31:18 by adrossig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_conv.h"
 
 /*
-** Converti un decimal en nombre hexadecimal.
+** Converts a decimal to a hexadecimal number.
 ** =======
-** #1: Decimal de type int.
+** #1: Decimal type int
 ** =======
-** Retourne le résultat de la conversion en entier de type char.
+** Returns the result of the conversion as an integer of type char.
 */
 
 char	*ft_dectohexa(int decimal)
