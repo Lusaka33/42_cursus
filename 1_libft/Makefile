@@ -44,8 +44,6 @@ CRYPT := ft_crypt_str.c ft_uncrypt_str.c
 DICT := ft_add_item_label.c ft_destroy.c ft_get_element_index.c \
 		ft_get_element_label.c ft_gethash.c ft_init_dict.c
 
-FILE :=	ft_open_files.c ft_read_files.c
-
 LST :=  ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 		ft_lstadd_back.c ft_lstdelone.c ft_lstlast.c \
 		ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_lst_append.c \
@@ -92,7 +90,6 @@ FILES := $(addprefix char/, $(CHAR)) \
 	$(addprefix print/, $(PRINT)) \
 	$(addprefix str/, $(STR)) \
 	$(addprefix sort/, $(SORT)) \
-	$(addprefix file/, $(FILE)) \
 	$(addprefix vector/, $(VECTOR)) \
 	$(addprefix dict/, $(DICT)) \
 	$(addprefix number/, $(NUMBER)) \
